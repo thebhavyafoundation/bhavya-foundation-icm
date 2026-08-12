@@ -1,71 +1,52 @@
-# FILE-MAP (Generated Index)
+# FILE-MAP — Bhavya Foundation ICM
 
-> Rebuild this file by scanning the workspace. Do not hand-edit content sections.
+Generated index. Agents jump here; do not hand-edit content payload.
 
-## Root
+## Entry
+- CLAUDE.md — identity + routing
+- CONTEXT.md — institutional overview
+- README.md
 
-- `CLAUDE.md` — Entry + routing table
-- `CONTEXT.md` — Institutional overview
-- `FILE-MAP.md` — This index
+## Corpus (sources of truth)
+- corpus/01_The_Constitution.md … 15_Brand_Constitution.md
+- corpus/prd/Master_Product_Requirements_Document.md
 
-## _meta/
+## Governance
+- governance/founder-steward.md
+- governance/board-of-trustees.md
 
-- `schema.md` — Node types, labels, naming rules
+## Pillars
+- pillars/forest/CONTEXT.md          (public name for constitutional Nature)
+- pillars/knowledge/CONTEXT.md
+- pillars/heritage/CONTEXT.md
+- pillars/community/CONTEXT.md
 
-## corpus/ (Source of Truth — Originals)
+## Institutes
+- institutes/ai-lab/CONTEXT.md
+- institutes/digital-institute/CONTEXT.md
 
-- 01_The_Constitution.md
-- 02_Public_Charitable_Trust_Deed.md
-- 03_The_Founders_Charter.md
-- 04_Board_Of_Trustees_Charter.md
-- 05_Governance_Manual.md
-- 06_Code_Of_Ethics.md
-- 07_Conflict_Of_Interest_Policy.md
-- 08_Financial_Management_And_Procurement_Policy.md
-- 09_Donation_Acceptance_Policy.md
-- 10_Volunteer_Policy.md
-- 11_Child_Protection_And_Safeguarding_Policy.md
-- 12_Environmental_Conservation_Policy.md
-- 13_AI_Ethics_And_Responsible_AI_Policy.md
-- 14_Digital_Library_Policy.md
-- 15_Brand_Constitution.md
+## Strategic Products
+- products/content-os/CONTEXT.md
+- products/gitos/CONTEXT.md
 
-## governance/
+## Knowledge Layer
+- knowledge-layer/CONTEXT.md
 
-- `founder-steward.md`
-- `board-of-trustees.md`
+## Programmes (examples)
+- programmes/green-bhavya-mission/CONTEXT.md
+- programmes/bhavya-ai-lab/CONTEXT.md
 
-## pillars/
+## Policies (structured)
+- policies/ai-ethics.md
+- policies/environmental-conservation.md
+- (more to be stamped from corpus)
 
-- `nature/CONTEXT.md`
-- `knowledge/CONTEXT.md`
-- `heritage/CONTEXT.md`
-- `community/CONTEXT.md`
+## Brand
+- brand/CONTEXT.md
+- brand/assets/ (logo, design-system, website mockups, brand boards, pillar heroes)
 
-## policies/
+## Meta
+- _meta/schema.md
 
-- `ai-ethics.md`
-- `environmental-conservation.md`
-
-## programmes/
-
-- `green-bhavya-mission/CONTEXT.md`
-- `bhavya-ai-lab/CONTEXT.md`
-- (stubs) bhavya-school-outreach/, bhavya-heritage-initiative/
-
-## brand/
-
-- `CONTEXT.md`
-
-## Other folders present
-
-- `teams/` (empty — ready for Board, Volunteer Corps nodes)
-- `patterns/` (empty — patterns only after 3+ occurrences)
-- `dashboards/` (empty — ready for 00-tracker.md)
-- `_shared/` (empty — stable factory material)
-- `setup/` (empty — questionnaires)
-
-## Notes
-
-- Vision PDF lives in original attachments (large binary; reference rather than force into every clone).
-- Additional policy nodes (finance, volunteer, child-protection, environmental, digital-library, conflict-of-interest, donation, code-of-ethics) can be stamped from corpus using the same pattern as `policies/ai-ethics.md`.
+## Scaffolded (ready for nodes)
+- teams/  patterns/  dashboards/  _shared/  setup/
