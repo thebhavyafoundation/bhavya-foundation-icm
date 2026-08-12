@@ -1,66 +1,58 @@
-# Bhavya Foundation — ICM Workspace
+# Bhavya Foundation — Institutional Context Map (ICM)
 
-**Restoring Nature. Empowering Humanity. Preserving Heritage.**
+**Vision**: Building for Generations.  
+**Missions**: Forest · Knowledge · Heritage · Community
 
-This repository is the institutional knowledge workspace of **Bhavya Foundation**, structured according to the **Interpretable Context Methodology (ICM)**.
+This repository is the living institutional brain of Bhavya Foundation, structured with the Interpretable Context Methodology (ICM). Folder structure is the architecture; one agent walks it by reading the right files at the right moment.
 
-## What this is
+## Start here
+1. Open [`CLAUDE.md`](CLAUDE.md) — identity + routing table  
+2. Or [`CONTEXT.md`](CONTEXT.md) — one-screen overview  
+3. Or [`FILE-MAP.md`](FILE-MAP.md) — full index
 
-A single, navigable folder structure that serves as:
+## What lives here
 
-- The living constitution and policy library
-- The organisational context map (pillars, programmes, governance, teams)
-- An agent-ready knowledge base (load only what the current question needs)
+| Layer | Location | Purpose |
+|-------|----------|---------|
+| Sources of truth | `corpus/` | Constitution, policies, Brand Constitution, Master PRD |
+| Governance | `governance/` | Founder & Steward, Board of Trustees |
+| Missions (Pillars) | `pillars/` | Forest, Knowledge, Heritage, Community |
+| Institutes | `institutes/` | AI Lab, Digital Institute |
+| Strategic Products | `products/` | Content OS, GitOS |
+| Shared Knowledge | `knowledge-layer/` | Institutional entities & relationships |
+| Brand & Design | `brand/` + `brand/assets/` | Logo, design system, website mockups, brand boards |
+| Programmes | `programmes/` | Concrete programmes under the missions |
+| Policies | `policies/` | Structured policy nodes (link back to corpus) |
 
-One agent (or human) can walk the structure using the routing tables in `CLAUDE.md` and the contracts in each folder.
-
-## Quick start
-
-1. Open `CLAUDE.md` — identity + routing table
-2. Open `CONTEXT.md` — one-screen overview of the Foundation
-3. Follow links or the routing table for any specific need (Constitution, AI policy, Forest Mission, Board, Brand, etc.)
-
-## Structure at a glance
+## Product architecture (from Master PRD)
 
 ```
-bhavya-foundation-icm/
-├── CLAUDE.md          ← start here
-├── CONTEXT.md
-├── FILE-MAP.md
-├── _meta/schema.md
-├── corpus/            ← original founding documents (immutable)
-├── governance/        ← Founder, Board, constitutional offices
-├── pillars/           ← Nature • Knowledge • Heritage • Community
-├── policies/          ← typed policy nodes
-├── programmes/        ← Green Bhavya Mission, AI Lab, …
-├── brand/             ← Brand Constitution
-├── teams/             ← organisational units (growing)
-├── patterns/
-├── dashboards/
-├── _shared/
-└── setup/
+BHAVYA FOUNDATION
+       │
+┌──────┼──────┐
+│      │      │
+MISSIONS  INSTITUTES  INTERNAL OS
+│      │      │
+Forest AI Lab   GitOS
+Knowledge Digital Institute
+Heritage Content OS
+Community
 ```
 
-## Methodology
+- **AI Lab** — research & experimental engine of Knowledge  
+- **Digital Institute** — practical education (flagship: Rural AI Education for children of Himachal Pradesh)  
+- **Content OS** — turns real work into evidence-backed public communication  
+- **GitOS** — internal open-source intelligence & engineering system  
 
-- **ICM** (Interpretable Context Methodology) — folder structure as agent architecture
-- Forms used: **Context Map** (organisation as graph) composed with **Knowledge Bundle** (institutional knowledge)
-- Ten invariants observed: one folder one job, small stable entry file, numbering for order, explicit contracts, factory vs product, editable outputs, load only what is needed, plain text + frontmatter + links, filesystem as state machine, instantiate by copying templates
+## Design system
+See `brand/assets/` for logo, full design-system reference, website mockups, and brand boards.
 
-## Source documents
-
-All founding documents (Constitution, Trust Deed, Charters, Policies, Brand Constitution) are preserved in full under `corpus/`. Structured nodes link back to them; they never replace them.
-
-## GitHub
-
-Owned by [@thebhavyafoundation](https://github.com/thebhavyafoundation)
+## ICM invariants
+One folder, one job · Small stable entry file · Numbering encodes order · Explicit contracts · Factory vs product · Every output is an edit surface · Load only what the step needs · Plain text + links + frontmatter · Filesystem is the state machine · Instantiate by copying.
 
 ## License / Status
-
-Founding Edition — internal institutional use.  
-Governance documents remain authoritative; this workspace makes them navigable and agent-ready.
+Institutional workspace of Bhavya Foundation.  
+ICM method: MIT (Van Clief & McDermott, arXiv:2603.16021).
 
 ---
-
-*"A tree planted today becomes the forest that protects tomorrow. Knowledge shared today becomes the wisdom that guides tomorrow. Bhavya Foundation is dedicated to nurturing both."*  
-— Manohar Lal, Founder & Managing Trustee
+*Building institutions that endure.*
