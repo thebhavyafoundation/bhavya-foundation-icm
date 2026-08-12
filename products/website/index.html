@@ -1,1 +1,101 @@
-<!DOCTYPE html><html><head><title>Bhavya</title></head><body>loading</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bhavya Foundation — Building for Generations</title>
+<meta name="theme-color" content="#0E3B2E"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+<style>
+:root{--f:#0E3B2E;--g:#D4AF37;--i:#F7F4EC}
+*{box-sizing:border-box;margin:0}
+body{font-family:Inter,system-ui,sans-serif;background:linear-gradient(168deg,#E8F0E9,#F7F4EC 40%,#F0EBE0);color:#1F1F1F;line-height:1.6}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.5rem}
+header{position:sticky;top:0;z-index:10;padding:.75rem 0}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:.5rem 1rem;background:rgba(255,255,255,.4);backdrop-filter:blur(12px);border-radius:1.25rem;border:1px solid rgba(255,255,255,.5)}
+.brand{display:flex;align-items:center;gap:.75rem;font-family:'Playfair Display',Georgia,serif;font-weight:600;color:var(--f);text-decoration:none}
+.brand svg{width:2.5rem;height:2.5rem}
+nav a{margin-left:.5rem;padding:.5rem .9rem;text-decoration:none;color:#2A2A2A;font-weight:500;border-radius:.65rem}
+nav a.cta{background:linear-gradient(135deg,#D4AF37,#c9a227);color:#0B2E24;font-weight:600}
+.hero{display:grid;gap:2rem;padding:3rem 0;align-items:center}
+@media(min-width:900px){.hero{grid-template-columns:1fr 1fr}}
+.card{background:rgba(255,255,255,.38);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.48);border-radius:1.25rem;padding:2rem;box-shadow:0 20px 50px rgba(11,46,36,.15)}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--g)}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.2rem,5vw,3.4rem);color:var(--f);line-height:1.15;margin:.75rem 0}
+.lede{color:#4A5560;max-width:34rem}
+.btn{display:inline-block;margin:.5rem .5rem 0 0;padding:.75rem 1.4rem;border-radius:.75rem;font-weight:600;text-decoration:none}
+.btn-p{background:linear-gradient(135deg,#D4AF37,#c9a227);color:#0B2E24}
+.btn-g{background:rgba(255,255,255,.55);border:1.5px solid rgba(14,59,46,.18);color:var(--f)}
+.visual{min-height:280px;border-radius:1.25rem;background:linear-gradient(160deg,#0B2E24,#1A5E2F 40%,#8A603B);box-shadow:0 20px 50px rgba(11,46,36,.2)}
+.missions{display:grid;gap:1rem;padding:2rem 0 3rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.mcard{padding:1.4rem;background:rgba(255,255,255,.38);backdrop-filter:blur(14px);border-radius:1.1rem;border:1px solid rgba(255,255,255,.5);text-decoration:none;color:inherit}
+.mcard h3{font-family:'Playfair Display',Georgia,serif;color:var(--f);margin:.4rem 0}
+.mcard p{font-size:.9rem;color:#4A5560}
+.sec{padding:2rem 0}
+.dark{background:rgba(11,46,36,.72);color:#F7F4EC;border-radius:1.25rem;padding:2rem}
+.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;text-align:center}
+@media(min-width:700px){.nums{grid-template-columns:repeat(4,1fr)}}
+.nums strong{display:block;font-family:'Playfair Display',Georgia,serif;font-size:1.8rem;color:var(--g)}
+footer{padding:2rem 0 3rem}
+.fbar{background:rgba(11,46,36,.72);color:#F7F4EC;border-radius:1.25rem;padding:2rem}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="bar">
+<a class="brand" href="/"><svg viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1A5E2F"/><stop offset="100%" stop-color="#0B2E24"/></linearGradient></defs><path fill="url(#g)" d="M95 30c-8 0-28 4-38 18-6 8-10 18-10 30v52c0 22 14 40 42 40h8c28 0 42-18 42-40V78c0-12-4-22-10-30-10-14-30-18-38-18z"/><circle cx="118" cy="72" r="10" fill="#D4AF37"/><path fill="#D4AF37" d="M60 145c20-8 40-8 60 0v8c-20-6-40-6-60 0v-8z"/><path fill="#6A8F6E" d="M55 120l22-28 14 18 12-22 28 32H55z"/></svg>Bhavya Foundation</a>
+<nav><a href="#missions">Missions</a><a href="#knowledge">Knowledge</a><a class="cta" href="#support">Support Us</a></nav>
+</div></div></header>
+<main class="wrap">
+<section class="hero">
+<div class="card"><p class="eyebrow">Nature · Knowledge · Heritage</p>
+<h1>Building for Generations.</h1>
+<p class="lede">Restoring nature. Advancing knowledge. Preserving heritage. Empowering communities — a long-term institution designed to endure.</p>
+<div style="margin-top:1.5rem"><a class="btn btn-p" href="#missions">Explore Missions →</a><a class="btn btn-g" href="#knowledge">Our Approach</a></div>
+</div>
+<div class="visual" role="img" aria-label="Himalayan forest"></div>
+</section>
+<section id="missions">
+<p class="eyebrow">The institution</p>
+<h2 style="font-family:'Playfair Display',Georgia,serif;color:var(--f);font-size:2rem;margin:.5rem 0 1.5rem">Four pillars. One purpose.</h2>
+<div class="missions">
+<a class="mcard" href="#missions"><p class="eyebrow">Forest</p><h3>Restore ecosystems</h3><p>Native forests, water security, biodiversity and climate resilience across Himalayan landscapes.</p></a>
+<a class="mcard" href="#knowledge"><p class="eyebrow">Knowledge</p><h3>Advance education &amp; research</h3><p>AI Lab research and Digital Institute pathways — practical learning and responsible innovation.</p></a>
+<a class="mcard" href="#missions"><p class="eyebrow">Heritage</p><h3>Preserve collective memory</h3><p>Culture, traditions, architecture and documentation — lawful and community-centred.</p></a>
+<a class="mcard" href="#missions"><p class="eyebrow">Community</p><h3>Empower local capacity</h3><p>Youth, women, schools and volunteers — capability over dependency.</p></a>
+</div>
+</section>
+<section class="sec" id="knowledge">
+<div class="card">
+<p class="eyebrow">Knowledge Mission</p>
+<h2 style="font-family:'Playfair Display',Georgia,serif;color:var(--f);font-size:1.8rem;margin:.5rem 0 1rem">Capability for the next generation</h2>
+<p class="lede">From foundational learning to frontier research, we make knowledge accessible, inclusive and impactful.</p>
+<ul style="margin:1rem 0 0 1.2rem;color:#4A5560"><li>AI Lab — research, experiments, responsible AI</li><li>Digital Institute — literacy, creation, facilitation</li><li>Open knowledge packages and institutional partners</li></ul>
+</div>
+</section>
+<section class="sec">
+<div class="dark">
+<p class="eyebrow" style="color:#E8D48B">By the numbers</p>
+<div class="nums" style="margin-top:1.25rem">
+<div><strong>331+</strong><span style="opacity:.85;font-size:.85rem">Knowledge packages</span></div>
+<div><strong>78+</strong><span style="opacity:.85;font-size:.85rem">Courses &amp; programmes</span></div>
+<div><strong>250K+</strong><span style="opacity:.85;font-size:.85rem">Learners</span></div>
+<div><strong>120+</strong><span style="opacity:.85;font-size:.85rem">Institutional partners</span></div>
+</div>
+</div>
+</section>
+<section class="sec" id="support">
+<div class="card" style="text-align:center">
+<p class="eyebrow" style="justify-content:center">Participate</p>
+<h2 style="font-family:'Playfair Display',Georgia,serif;color:var(--f);font-size:1.8rem;margin:.5rem 0 1rem">Build with Bhavya</h2>
+<p class="lede" style="margin:0 auto">Learn, teach, research, volunteer, partner, or support.</p>
+<a class="btn btn-p" href="#support" style="margin-top:1.25rem">Support Us →</a>
+</div>
+</section>
+</main>
+<footer><div class="wrap"><div class="fbar">
+<p style="font-family:'Playfair Display',Georgia,serif;font-size:1.2rem">Bhavya Foundation</p>
+<p style="opacity:.85;margin:.5rem 0 1rem">Nature. Knowledge. Heritage. Building for Generations.</p>
+<p style="opacity:.7;font-size:.85rem">© Bhavya Foundation · Evidence before claims</p>
+</div></div></footer>
+</body>
+</html>
