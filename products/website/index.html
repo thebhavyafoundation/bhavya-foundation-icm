@@ -19,33 +19,33 @@
 @media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:1.6rem}}
 .hero-copy{padding:clamp(1.5rem,3vw,2.4rem);position:relative}
 .hero-copy .deco{position:absolute;top:1.2rem;right:1.2rem;opacity:.35;pointer-events:none}
-.hero-visual{position:relative;border-radius:var(--r-lg);overflow:hidden;min-height:300px;box-shadow:var(--sh)}
-.hero-visual img{width:100%;height:100%;object-fit:cover;min-height:300px;transition:transform 9s var(--ease)}
+.hero-visual{position:relative;border-radius:var(--r-lg,1.25rem);overflow:hidden;min-height:300px;box-shadow:0 22px 55px rgba(11,46,36,.22)}
+.hero-visual img{width:100%;height:100%;object-fit:cover;min-height:300px;transition:transform 9s ease}
 .hero-visual:hover img{transform:scale(1.035)}
 .hero-visual .overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(11,46,36,.18),rgba(11,46,36,.42) 55%,rgba(74,52,40,.38));pointer-events:none;z-index:1}
-.hero-visual .tag{position:absolute;left:1.15rem;bottom:1.15rem;z-index:2;background:rgba(11,46,36,.7);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--ivory);padding:.55rem 1rem;border-radius:.65rem;font-size:.82rem;font-weight:500;border:1px solid rgba(255,255,255,.12)}
-.gold-rule{width:3rem;height:2px;background:linear-gradient(90deg,var(--gold),transparent);border:none;margin:.65rem 0 1.1rem}
+.hero-visual .tag{position:absolute;left:1.15rem;bottom:1.15rem;z-index:2;background:rgba(11,46,36,.7);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#F7F4EC;padding:.55rem 1rem;border-radius:.65rem;font-size:.82rem;font-weight:500;border:1px solid rgba(255,255,255,.12)}
+.gold-rule{width:3rem;height:2px;background:linear-gradient(90deg,#D4AF37,transparent);border:none;margin:.65rem 0 1.1rem}
 .mission-grid{display:grid;gap:1.15rem;grid-template-columns:1fr}
 @media(min-width:700px){.mission-grid{grid-template-columns:1.2fr .9fr .9fr}.mission-grid .m-card:first-child{grid-row:1/3}}
 @media(min-width:1100px){.mission-grid{grid-template-columns:1.25fr repeat(3,1fr)}.mission-grid .m-card:first-child{grid-row:auto}}
-.m-card{position:relative;overflow:hidden;border-radius:var(--r);min-height:220px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .35s var(--ease),box-shadow .35s}
+.m-card{position:relative;overflow:hidden;border-radius:1rem;min-height:220px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .35s ease,box-shadow .35s}
 .m-card:hover{transform:translateY(-4px);box-shadow:0 28px 56px rgba(11,46,36,.18)}
 .m-card .bg{position:absolute;inset:0;z-index:0}
-.m-card .bg img{width:100%;height:100%;object-fit:cover;transition:transform 6s var(--ease)}
+.m-card .bg img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
 .m-card:hover .bg img{transform:scale(1.05)}
 .m-card .shade{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(11,46,36,.9) 0%,rgba(11,46,36,.4) 50%,transparent 100%)}
-.m-card .body{position:relative;z-index:2;padding:1.35rem 1.25rem;color:var(--ivory)}
-.m-card .l{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:.3rem}
-.m-card h3{font-family:var(--fd);font-size:1.25rem;margin-bottom:.4rem;color:#fff}
+.m-card .body{position:relative;z-index:2;padding:1.35rem 1.25rem;color:#F7F4EC}
+.m-card .l{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#E8D48B;margin-bottom:.3rem}
+.m-card h3{font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;margin-bottom:.4rem;color:#fff}
 .m-card p{font-size:.88rem;opacity:.88;line-height:1.55}
-.m-card .go{margin-top:.85rem;font-size:.86rem;font-weight:600;color:var(--gold2)}
+.m-card .go{margin-top:.85rem;font-size:.86rem;font-weight:600;color:#E8D48B}
 .m-card.featured{min-height:320px}
 @media(min-width:700px){.m-card.featured{min-height:100%}}
-.band-dark{background:linear-gradient(160deg,var(--deep) 0%,var(--forest) 50%,#163d2a 100%);color:var(--ivory);padding:3rem 0;margin:1rem 0;position:relative;overflow:hidden}
-.band-dark::before{content:"";position:absolute;inset:0;opacity:.14;background:radial-gradient(ellipse 80% 60% at 80% 20%,var(--gold),transparent)}
+.band-dark{background:linear-gradient(160deg,#0B2E24 0%,#0E3B2E 50%,#163d2a 100%);color:#F7F4EC;padding:3rem 0;margin:1rem 0;position:relative;overflow:hidden}
+.band-dark::before{content:"";position:absolute;inset:0;opacity:.14;background:radial-gradient(ellipse 80% 60% at 80% 20%,#D4AF37,transparent)}
 .band-dark .display{color:#fff}
 .band-dark .lede{color:rgba(247,244,236,.82)}
-.split-visual{border-radius:var(--r-lg);overflow:hidden;min-height:280px;box-shadow:var(--sh);position:relative}
+.split-visual{border-radius:1.25rem;overflow:hidden;min-height:280px;box-shadow:0 22px 55px rgba(11,46,36,.22);position:relative}
 .split-visual img{width:100%;height:100%;object-fit:cover;min-height:280px}
 .split-visual .shade{position:absolute;inset:0;background:linear-gradient(145deg,rgba(11,46,36,.2),rgba(11,46,36,.45))}
 .mtn-line{display:block;width:100%;max-width:12rem;height:auto;margin:.5rem 0 0;opacity:.45}
@@ -54,19 +54,6 @@
   .hero-visual img,.m-card .bg img{transition:none}
   .hero-visual:hover img,.m-card:hover .bg img{transform:none}
 }
-.hero-scene{position:absolute;inset:0;background:
-  radial-gradient(ellipse 50% 40% at 78% 18%, rgba(255,220,150,.55), transparent 55%),
-  linear-gradient(180deg, #ffc88a 0%, #ffe6be 22%, #b4c8b9 48%, #0e3b2e 78%, #0b2e24 100%);}
-.hero-scene::before{content:"";position:absolute;left:0;right:0;bottom:0;height:55%;
-  background:
-    linear-gradient(105deg, transparent 20%, rgba(14,59,46,.4) 50%, transparent 80%),
-    radial-gradient(ellipse 80% 50% at 50% 100%, #0b2e24 0%, transparent 70%);}
-.hero-scene::after{content:"";position:absolute;inset:0;
-  background:
-    radial-gradient(circle at 20% 70%, rgba(8,40,30,.5) 0%, transparent 25%),
-    radial-gradient(circle at 45% 75%, rgba(8,40,30,.45) 0%, transparent 20%),
-    radial-gradient(circle at 70% 68%, rgba(8,40,30,.5) 0%, transparent 22%),
-    radial-gradient(circle at 88% 72%, rgba(8,40,30,.4) 0%, transparent 18%);}
 </style>
 </head>
 <body>
@@ -109,8 +96,8 @@
       </div>
       <svg class="mtn-line" viewBox="0 0 200 28" aria-hidden="true"><path fill="none" stroke="#D4AF37" stroke-width="1.2" d="M0 22 L40 10 L70 18 L110 4 L150 16 L200 8"/></svg>
     </div>
-    <div class="hero-visual reveal" role="img" aria-label="Illustrative Himalayan forest landscape at dawn">
-      <div class="hero-scene" aria-hidden="true"></div>
+    <div class="hero-visual reveal">
+      <img src="/assets/hero/hero-1200.jpg" srcset="/assets/hero/hero-480.jpg 480w, /assets/hero/hero-800.jpg 800w, /assets/hero/hero-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 46vw" alt="Himalayan forest landscape at golden hour" width="1200" height="750" fetchpriority="high"/>
       <div class="overlay"></div>
       <span class="tag">Forest · Himalayan stewardship</span>
     </div>
@@ -125,22 +112,22 @@
     </div>
     <div class="mission-grid">
       <a class="m-card featured reveal" href="/missions/forest">
-        <div class="bg"><div style="position:absolute;inset:0;background:linear-gradient(160deg,#0e3b2e,#0b2e24);" aria-hidden="true"></div></div>
+        <div class="bg"><img src="/assets/missions/forest-card.jpg" alt="" width="640" height="640" loading="lazy"/></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Forest</span><h3>Restore ecosystems</h3><p>Native forests, water security, biodiversity and climate resilience across Himalayan landscapes.</p><span class="go">Forest Mission →</span></div>
       </a>
       <a class="m-card reveal" href="/missions/knowledge">
-        <div class="bg"><div style="position:absolute;inset:0;background:linear-gradient(160deg,#1a5e2f,#0b2e24);" aria-hidden="true"></div></div>
+        <div class="bg"><img src="/assets/missions/knowledge-card.jpg" alt="" width="640" height="640" loading="lazy"/></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Knowledge</span><h3>Advance learning</h3><p>AI Lab research and Digital Institute pathways.</p><span class="go">Explore →</span></div>
       </a>
       <a class="m-card reveal" href="/missions/heritage">
-        <div class="bg"><div style="position:absolute;inset:0;background:linear-gradient(160deg,#8a603b,#0b2e24);" aria-hidden="true"></div></div>
+        <div class="bg"><img src="/assets/missions/heritage-card.jpg" alt="" width="640" height="640" loading="lazy"/></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Heritage</span><h3>Preserve memory</h3><p>Culture, traditions, architecture — lawful and community-centred.</p><span class="go">Explore →</span></div>
       </a>
       <a class="m-card reveal" href="/missions/community">
-        <div class="bg"><div style="position:absolute;inset:0;background:linear-gradient(160deg,#6a8f6e,#0b2e24);" aria-hidden="true"></div></div>
+        <div class="bg"><img src="/assets/missions/community-card.jpg" alt="" width="640" height="640" loading="lazy"/></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Community</span><h3>Empower people</h3><p>Youth, women, schools and volunteers — capability over dependency.</p><span class="go">Explore →</span></div>
       </a>
@@ -151,7 +138,7 @@
   <div class="wrap" style="position:relative;z-index:1">
     <div class="grid-2">
       <div class="reveal">
-        <p class="eyebrow" style="color:var(--gold2)">Knowledge Mission</p>
+        <p class="eyebrow" style="color:var(--gold2,#E8D48B)">Knowledge Mission</p>
         <h2 class="display md" style="margin:.5rem 0 1rem">Capability for the next generation</h2>
         <p class="lede">The AI Lab advances responsible research. The Digital Institute delivers practical learning. AI Education is a programme inside the Digital Institute — not a separate product.</p>
         <div class="row" style="margin-top:1.3rem">
@@ -160,7 +147,7 @@
         </div>
       </div>
       <div class="split-visual reveal">
-        <div class="know-scene" role="img" aria-label="Illustrative knowledge atmosphere" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%, rgba(255,240,200,.12), transparent 50%),linear-gradient(165deg,#152820 0%,#1a3028 40%,#0e3b2e 100%);"></div>
+        <img src="/assets/knowledge/knowledge-960.jpg" srcset="/assets/knowledge/knowledge-640.jpg 640w, /assets/knowledge/knowledge-960.jpg 960w" sizes="(max-width:820px) 100vw, 45vw" alt="Knowledge Mission atmosphere" width="960" height="550"/>
         <div class="shade"></div>
       </div>
     </div>
@@ -169,10 +156,10 @@
 <section class="sec">
   <div class="wrap">
     <div class="glass-dark reveal" style="padding:2rem 1.7rem">
-      <p class="eyebrow" style="color:var(--gold2)">Evidence · Forest</p>
+      <p class="eyebrow" style="color:var(--gold2,#E8D48B)">Evidence · Forest</p>
       <h3 class="display" style="font-size:1.4rem;color:#fff;margin:.5rem 0 .75rem">Green Bhavya Mission</h3>
       <p style="opacity:.9;max-width:38rem">We restore ecosystems, increase forest cover, conserve water and protect biodiversity — with long-term stewardship as the measure of success, not short-term claims.</p>
-      <p class="note" style="color:rgba(247,244,236,.75);border-color:var(--gold)">Claims about scale are published only when documented. Evidence before claims.</p>
+      <p class="note" style="color:rgba(247,244,236,.75);border-color:#D4AF37">Claims about scale are published only when documented. Evidence before claims.</p>
       <div class="row" style="margin-top:1.3rem"><a class="btn btn-p" href="/missions/forest">Forest Mission →</a></div>
     </div>
   </div>
