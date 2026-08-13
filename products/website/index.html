@@ -54,6 +54,19 @@
   .hero-visual img,.m-card .bg img{transition:none}
   .hero-visual:hover img,.m-card:hover .bg img{transform:none}
 }
+.hero-scene{position:absolute;inset:0;background:
+  radial-gradient(ellipse 50% 40% at 78% 18%, rgba(255,220,150,.55), transparent 55%),
+  linear-gradient(180deg, #ffc88a 0%, #ffe6be 22%, #b4c8b9 48%, #0e3b2e 78%, #0b2e24 100%);}
+.hero-scene::before{content:"";position:absolute;left:0;right:0;bottom:0;height:55%;
+  background:
+    linear-gradient(105deg, transparent 20%, rgba(14,59,46,.4) 50%, transparent 80%),
+    radial-gradient(ellipse 80% 50% at 50% 100%, #0b2e24 0%, transparent 70%);}
+.hero-scene::after{content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 20% 70%, rgba(8,40,30,.5) 0%, transparent 25%),
+    radial-gradient(circle at 45% 75%, rgba(8,40,30,.45) 0%, transparent 20%),
+    radial-gradient(circle at 70% 68%, rgba(8,40,30,.5) 0%, transparent 22%),
+    radial-gradient(circle at 88% 72%, rgba(8,40,30,.4) 0%, transparent 18%);}
 </style>
 </head>
 <body>
@@ -96,8 +109,8 @@
       </div>
       <svg class="mtn-line" viewBox="0 0 200 28" aria-hidden="true"><path fill="none" stroke="#D4AF37" stroke-width="1.2" d="M0 22 L40 10 L70 18 L110 4 L150 16 L200 8"/></svg>
     </div>
-    <div class="hero-visual reveal">
-      <img src="/assets/hero/hero-1200.jpg" srcset="/assets/hero/hero-480.jpg 480w, /assets/hero/hero-800.jpg 800w, /assets/hero/hero-1200.jpg 1200w, /assets/hero/hero-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 46vw" alt="Himalayan forest landscape — Bhavya Forest Mission" width="1200" height="800" fetchpriority="high"/>
+    <div class="hero-visual reveal" role="img" aria-label="Illustrative Himalayan forest landscape at dawn">
+      <div class="hero-scene" aria-hidden="true"></div>
       <div class="overlay"></div>
       <span class="tag">Forest · Himalayan stewardship</span>
     </div>
@@ -112,22 +125,22 @@
     </div>
     <div class="mission-grid">
       <a class="m-card featured reveal" href="/missions/forest">
-        <div class="bg"><img src="/assets/missions/forest-bg.jpg" alt="" width="800" height="500"/></div>
+        <div class="bg"><div style="position:absolute;inset:0;background:linear-gradient(160deg,#0e3b2e,#0b2e24);" aria-hidden="true"></div></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Forest</span><h3>Restore ecosystems</h3><p>Native forests, water security, biodiversity and climate resilience across Himalayan landscapes.</p><span class="go">Forest Mission →</span></div>
       </a>
       <a class="m-card reveal" href="/missions/knowledge">
-        <div class="bg"><img src="/assets/missions/knowledge-bg.jpg" alt="" width="800" height="500"/></div>
+        <div class="bg"><div style="position:absolute;inset:0;background:linear-gradient(160deg,#1a5e2f,#0b2e24);" aria-hidden="true"></div></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Knowledge</span><h3>Advance learning</h3><p>AI Lab research and Digital Institute pathways.</p><span class="go">Explore →</span></div>
       </a>
       <a class="m-card reveal" href="/missions/heritage">
-        <div class="bg"><img src="/assets/missions/heritage-bg.jpg" alt="" width="800" height="500"/></div>
+        <div class="bg"><div style="position:absolute;inset:0;background:linear-gradient(160deg,#8a603b,#0b2e24);" aria-hidden="true"></div></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Heritage</span><h3>Preserve memory</h3><p>Culture, traditions, architecture — lawful and community-centred.</p><span class="go">Explore →</span></div>
       </a>
       <a class="m-card reveal" href="/missions/community">
-        <div class="bg"><img src="/assets/missions/community-bg.jpg" alt="" width="800" height="500"/></div>
+        <div class="bg"><div style="position:absolute;inset:0;background:linear-gradient(160deg,#6a8f6e,#0b2e24);" aria-hidden="true"></div></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Community</span><h3>Empower people</h3><p>Youth, women, schools and volunteers — capability over dependency.</p><span class="go">Explore →</span></div>
       </a>
@@ -147,7 +160,7 @@
         </div>
       </div>
       <div class="split-visual reveal">
-        <img src="/assets/knowledge/knowledge-960.jpg" srcset="/assets/knowledge/knowledge-640.jpg 640w, /assets/knowledge/knowledge-960.jpg 960w, /assets/knowledge/knowledge-1400.jpg 1400w" sizes="(max-width:820px) 100vw, 45vw" alt="Knowledge Mission — learning and research" width="960" height="640"/>
+        <div class="know-scene" role="img" aria-label="Illustrative knowledge atmosphere" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%, rgba(255,240,200,.12), transparent 50%),linear-gradient(165deg,#152820 0%,#1a3028 40%,#0e3b2e 100%);"></div>
         <div class="shade"></div>
       </div>
     </div>
