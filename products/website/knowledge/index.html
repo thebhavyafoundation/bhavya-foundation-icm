@@ -4,30 +4,61 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Knowledge Mission — Bhavya Foundation</title>
-<link rel="stylesheet" href="/css/site.css"/>
+<meta name="description" content="AI Lab, Digital Institute, and learning pathways."/>
+<meta name="theme-color" content="#0E3B2E"/>
+<link rel="icon" type="image/png" href="/assets/brand/logo-64.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/site.css"/>
 </head>
 <body>
-<header><div class="wrap"><div class="bar glass">
-<a class="brand" href="/">Bhavya Foundation</a>
-<nav class="nav"><a href="/">Home</a><a href="/missions/">Missions</a><a href="/knowledge/" aria-current="page">Knowledge</a><a class="nav-cta" href="/support">Support Us</a></nav>
-</div></div></header>
-<main><section class="sec"><div class="wrap">
-<nav class="breadcrumb"><a href="/">Home</a><span>/</span>Knowledge</nav>
-<p class="eyebrow">Knowledge Mission</p>
-<h1 class="display lg" style="margin:.4rem 0 1rem">Capability for the next generation</h1>
-<p class="lede">Research, practical learning, and responsible innovation.</p>
+<header id="siteHeader">
+  <div class="wrap"><div class="bar glass">
+    <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/">Home</a><a href="/missions/">Missions</a>
+      <a href="/knowledge/" aria-current="page">Knowledge</a>
+      <a class="nav-cta" href="/support">Support Us</a>
+    </nav>
+    <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
+  </div>
+  <nav class="mob glass" id="mobNav" aria-label="Mobile">
+    <a href="/missions/">Missions</a><a href="/knowledge/">Knowledge</a><a href="/support">Support Us</a>
+  </nav></div>
+</header>
+<main>
+<section class="band-dark" style="margin:0;padding:3.2rem 0 2.5rem">
+<div class="wrap" style="position:relative;z-index:1">
+<nav class="breadcrumb" style="color:rgba(247,244,236,.7)"><a href="/" style="color:var(--gold2)">Home</a><span>/</span>Knowledge</nav>
+<p class="eyebrow" style="color:var(--gold2)">Knowledge Mission</p>
+<h1 class="display lg" style="margin:.5rem 0 1rem">Capability for the next generation</h1>
+<p class="lede">Research, practical learning, and responsible innovation — in service of people, nature, and institutions.</p>
 <div class="grid-2" style="margin-top:2rem">
-<a class="card glass" href="/knowledge/ai-lab"><span class="l">Institute</span><h3>AI Lab</h3><p>Research, experiments, and responsible AI across Bhavya’s missions.</p><span class="go">Explore AI Lab →</span></a>
-<a class="card glass" href="/knowledge/digital-institute"><span class="l">Institute</span><h3>Digital Institute</h3><p>Practical education pathways — including the AI Education programme.</p><span class="go">Explore Digital Institute →</span></a>
+<div class="stat-glass reveal"><p class="num">AI Lab</p><p class="lbl">Research · experiments · responsible AI</p><a href="/knowledge/ai-lab" style="color:var(--gold2);font-weight:600;font-size:.9rem;margin-top:.6rem;display:inline-block">Explore AI Lab →</a></div>
+<div class="stat-glass reveal"><p class="num">Digital Institute</p><p class="lbl">Practical pathways · including AI Education programme</p><a href="/knowledge/digital-institute" style="color:var(--gold2);font-weight:600;font-size:.9rem;margin-top:.6rem;display:inline-block">Explore Digital Institute →</a></div>
 </div>
-<div class="glass" style="padding:1.5rem;margin-top:1.3rem">
-<p><strong>AI Education</strong> is a programme inside the Digital Institute. It is not a separate product or the whole of Bhavya Foundation.</p>
 </div>
-<div class="row" style="margin-top:1.4rem">
+</section>
+<section class="sec"><div class="wrap grid-2">
+<div class="split-visual reveal"><img src="/assets/knowledge/knowledge-960.jpg" alt="Knowledge Mission visual" width="960" height="640"/><div class="shade"></div></div>
+<div class="reveal">
+<p class="eyebrow">Programme note</p>
+<p class="pull">AI Education is a programme inside the Digital Institute. It is not a separate product or the whole of Bhavya Foundation.</p>
+<div class="row" style="margin-top:1.2rem">
 <a class="btn btn-g" href="/research">Research</a>
-<a class="btn btn-p" href="/missions/knowledge">Knowledge Mission overview →</a>
-</div></div></section></main>
-<footer><div class="wrap"><div class="finner glass-dark"><p class="fbrand">Bhavya Foundation</p>
-<div class="fbot"><span>© Bhavya Foundation</span><span>Evidence before claims</span></div></div></div></footer>
-</body></html>
+<a class="btn btn-p" href="/missions/knowledge">Mission overview →</a>
+</div>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap"><div class="finner glass-dark">
+<p class="fbrand"><img src="/assets/brand/logo-64.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
+<div class="fbot"><span>© Bhavya Foundation</span><span>Evidence before claims</span></div>
+</div></div></footer>
+<script>
+(function(){var btn=document.getElementById('menuBtn');var nav=document.getElementById('mobNav');
+if(btn&&nav){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});}
+document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+})();
+</script>
+</body>
+</html>
