@@ -8,8 +8,7 @@
     { "source": "/knowledge/", "destination": "/knowledge/index.html" }
   ],
   "redirects": [
-    { "source": "/pages/:path*", "destination": "/", "permanent": true },
-    { "source": "/pages/missions.html", "destination": "/missions/", "permanent": true }
+    { "source": "/pages/:path*", "destination": "/", "permanent": true }
   ],
   "headers": [
     {
