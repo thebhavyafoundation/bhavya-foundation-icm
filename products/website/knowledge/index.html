@@ -4,55 +4,67 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Knowledge Mission — Bhavya Foundation</title>
-<meta name="description" content="AI Lab, Digital Institute, and learning pathways."/>
+<meta name="description" content="AI Lab, Digital Institute, research and literacy within the Knowledge Mission."/>
 <meta name="theme-color" content="#0E3B2E"/>
 <link rel="icon" type="image/png" href="/assets/brand/logo-64.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
+<style>
+.band-dark{background:linear-gradient(160deg,var(--deep),var(--forest) 55%,#163d2a);color:var(--ivory);padding:2.5rem 0;margin:0 0 1.5rem;position:relative;overflow:hidden}
+.band-dark::before{content:"";position:absolute;inset:0;opacity:.14;background:radial-gradient(ellipse 80% 60% at 80% 20%,var(--gold),transparent)}
+.band-dark .display{color:#fff}
+.band-dark .lede{color:rgba(247,244,236,.82)}
+.split-visual{border-radius:var(--r-lg);overflow:hidden;min-height:260px;box-shadow:var(--sh);position:relative}
+.split-visual img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.gold-rule{width:3rem;height:2px;background:linear-gradient(90deg,var(--gold),transparent);border:none;margin:.55rem 0 1rem}
+</style>
 </head>
 <body>
 <header id="siteHeader">
   <div class="wrap"><div class="bar glass">
     <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
     <nav class="nav" aria-label="Primary">
-      <a href="/">Home</a><a href="/missions/">Missions</a>
-      <a href="/knowledge/" aria-current="page">Knowledge</a>
+      <a href="/">Home</a><a href="/knowledge/" aria-current="page">Knowledge</a>
       <a class="nav-cta" href="/support">Support Us</a>
     </nav>
     <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
   </div>
-  <nav class="mob glass" id="mobNav" aria-label="Mobile">
-    <a href="/missions/">Missions</a><a href="/knowledge/">Knowledge</a><a href="/support">Support Us</a>
-  </nav></div>
+  <nav class="mob glass" id="mobNav"><a href="/knowledge/">Knowledge</a><a href="/knowledge/ai-lab">AI Lab</a><a href="/knowledge/digital-institute">Digital Institute</a><a href="/support">Support Us</a></nav>
+  </div>
 </header>
 <main>
-<section class="band-dark" style="margin:0;padding:3.2rem 0 2.5rem">
-<div class="wrap" style="position:relative;z-index:1">
-<nav class="breadcrumb" style="color:rgba(247,244,236,.7)"><a href="/" style="color:var(--gold2)">Home</a><span>/</span>Knowledge</nav>
-<p class="eyebrow" style="color:var(--gold2)">Knowledge Mission</p>
-<h1 class="display lg" style="margin:.5rem 0 1rem">Capability for the next generation</h1>
-<p class="lede">Research, practical learning, and responsible innovation — in service of people, nature, and institutions.</p>
-<div class="grid-2" style="margin-top:2rem">
-<div class="stat-glass reveal"><p class="num">AI Lab</p><p class="lbl">Research · experiments · responsible AI</p><a href="/knowledge/ai-lab" style="color:var(--gold2);font-weight:600;font-size:.9rem;margin-top:.6rem;display:inline-block">Explore AI Lab →</a></div>
-<div class="stat-glass reveal"><p class="num">Digital Institute</p><p class="lbl">Practical pathways · including AI Education programme</p><a href="/knowledge/digital-institute" style="color:var(--gold2);font-weight:600;font-size:.9rem;margin-top:.6rem;display:inline-block">Explore Digital Institute →</a></div>
-</div>
-</div>
+<section class="band-dark">
+  <div class="wrap" style="position:relative;z-index:1">
+    <nav class="breadcrumb" style="color:rgba(247,244,236,.7)"><a href="/" style="color:var(--gold2)">Home</a><span>/</span>Knowledge</nav>
+    <p class="eyebrow" style="color:var(--gold2)">Knowledge Mission</p>
+    <h1 class="display lg" style="margin:.4rem 0 .5rem">Knowledge</h1>
+    <hr class="gold-rule"/>
+    <p class="lede">Research, practical learning, and responsible innovation — capability for the next generation.</p>
+  </div>
 </section>
-<section class="sec"><div class="wrap grid-2">
-<div class="split-visual reveal"><img src="/assets/knowledge/knowledge-960.jpg" alt="Knowledge Mission visual" width="960" height="640"/><div class="shade"></div></div>
-<div class="reveal">
-<p class="eyebrow">Programme note</p>
-<p class="pull">AI Education is a programme inside the Digital Institute. It is not a separate product or the whole of Bhavya Foundation.</p>
-<div class="row" style="margin-top:1.2rem">
-<a class="btn btn-g" href="/research">Research</a>
-<a class="btn btn-p" href="/missions/knowledge">Mission overview →</a>
-</div>
-</div>
-</div></section>
+<section class="sec" style="padding-top:.5rem">
+  <div class="wrap grid-2">
+    <div class="split-visual reveal">
+      <img src="/assets/knowledge/knowledge-960.jpg" srcset="/assets/knowledge/knowledge-640.jpg 640w, /assets/knowledge/knowledge-960.jpg 960w" sizes="(max-width:820px) 100vw, 45vw" alt="Knowledge Mission" width="960" height="640"/>
+    </div>
+    <div class="glass prose reveal" style="padding:1.9rem">
+      <p>The Knowledge Mission holds two institutes:</p>
+      <ul>
+        <li><a href="/knowledge/ai-lab"><strong>AI Lab</strong></a> — experimental and research engine</li>
+        <li><a href="/knowledge/digital-institute"><strong>Digital Institute</strong></a> — practical education pathways</li>
+      </ul>
+      <p class="note">AI Education is a programme inside the Digital Institute — not a separate product.</p>
+      <div class="row" style="margin-top:1.2rem">
+        <a class="btn btn-p" href="/knowledge/ai-lab">AI Lab →</a>
+        <a class="btn btn-g" href="/knowledge/digital-institute">Digital Institute</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <footer><div class="wrap"><div class="finner glass-dark">
 <p class="fbrand"><img src="/assets/brand/logo-64.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
-<div class="fbot"><span>© Bhavya Foundation</span><span>Evidence before claims</span></div>
+<div class="fbot"><span>© Bhavya Foundation</span></div>
 </div></div></footer>
 <script>
 (function(){var btn=document.getElementById('menuBtn');var nav=document.getElementById('mobNav');

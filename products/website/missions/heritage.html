@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Heritage Mission — Bhavya Foundation</title>
 <meta name="theme-color" content="#0E3B2E"/>
-<link rel="icon" type="image/png" href="/assets/brand/logo.png"/>
+<link rel="icon" type="image/png" href="/assets/brand/logo-64.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
 <style>
-.panel{min-height:280px;border-radius:var(--r-lg);background:linear-gradient(155deg,#2a2418,#4a3a28 55%,#3d3220);box-shadow:var(--sh);position:relative;overflow:hidden}
-.panel::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 80% 15%,rgba(212,175,55,.25),transparent 55%)}
+.split-visual{border-radius:var(--r-lg);overflow:hidden;min-height:280px;box-shadow:var(--sh);position:relative}
+.split-visual img{width:100%;height:100%;object-fit:cover;min-height:280px}
+.split-visual .shade{position:absolute;inset:0;background:linear-gradient(145deg,rgba(11,46,36,.2),rgba(11,46,36,.45))}
+.gold-rule{width:3rem;height:2px;background:linear-gradient(90deg,var(--gold),transparent);border:none;margin:.55rem 0 1rem}
 </style>
 </head>
 <body>
@@ -27,11 +29,12 @@
 <section class="page-hero"><div class="wrap">
 <nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/missions/">Missions</a><span>/</span>Heritage Mission</nav>
 <p class="eyebrow">Heritage</p>
-<h1 class="display lg" style="margin:.4rem 0 .6rem">Heritage Mission</h1>
+<h1 class="display lg" style="margin:.4rem 0 .5rem">Heritage Mission</h1>
+<hr class="gold-rule"/>
 <p class="lede">Traditional knowledge, culture, architecture — lawful and community-centred.</p>
 </div></section>
 <section class="sec" style="padding-top:.5rem"><div class="wrap grid-2">
-<div class="panel reveal" role="img" aria-label="Heritage mission visual"></div>
+<div class="split-visual reveal"><img src="/assets/missions/heritage-bg.jpg" alt="Heritage mission" width="800" height="500"/><div class="shade"></div></div>
 <div class="glass prose reveal" style="padding:1.9rem">
 <p>The Heritage Mission preserves collective memory without spectacle.</p>
 <ul><li>Traditional knowledge and living heritage</li><li>Architecture and cultural documentation</li><li>History and local memory — with consent and care</li></ul>
@@ -43,7 +46,7 @@
 </div></section>
 </main>
 <footer><div class="wrap"><div class="finner glass-dark">
-<p class="fbrand"><img src="/assets/brand/logo.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
+<p class="fbrand"><img src="/assets/brand/logo-64.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
 <div class="fbot"><span>© Bhavya Foundation</span></div>
 </div></div></footer>
 <script>
