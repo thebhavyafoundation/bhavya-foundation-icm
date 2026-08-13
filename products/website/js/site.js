@@ -1,0 +1,1 @@
+(function(){var t=document.querySelector('[data-nav-toggle]'),n=document.getElementById('mobile-nav');if(!t||!n)return;t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',o?'true':'false');});})();
