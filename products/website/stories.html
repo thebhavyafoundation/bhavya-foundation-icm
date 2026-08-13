@@ -4,22 +4,44 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Stories — Bhavya Foundation</title>
-<link rel="stylesheet" href="/css/site.css"/>
+<meta name="theme-color" content="#0E3B2E"/>
+<link rel="icon" type="image/png" href="/assets/brand/logo-64.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/site.css"/>
 </head>
 <body>
-<header><div class="wrap"><div class="bar glass">
-<a class="brand" href="/">Bhavya Foundation</a>
-<nav class="nav"><a href="/">Home</a><a href="/stories">Stories</a><a class="nav-cta" href="/support">Support Us</a></nav>
-</div></div></header>
-<main><section class="sec"><div class="wrap">
+<header id="siteHeader">
+  <div class="wrap"><div class="bar glass">
+    <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
+    <nav class="nav"><a href="/">Home</a><a href="/stories">Stories</a><a class="nav-cta" href="/support">Support Us</a></nav>
+    <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
+  </div>
+  <nav class="mob glass" id="mobNav"><a href="/">Home</a><a href="/stories">Stories</a><a href="/support">Support Us</a></nav>
+  </div>
+</header>
+<main>
+<section class="page-hero"><div class="wrap">
 <nav class="breadcrumb"><a href="/">Home</a><span>/</span>Stories</nav>
 <p class="eyebrow">Evidence</p>
-<h1 class="display lg" style="margin:.4rem 0 1rem">Stories</h1>
-<div class="glass" style="padding:1.8rem;margin-top:1.5rem">
+<h1 class="display lg" style="margin:.4rem 0 .6rem">Stories</h1>
+<p class="lede">Evidence-led accounts of institutional work.</p>
+</div></section>
+<section class="sec" style="padding-top:.5rem"><div class="wrap">
+<div class="glass reveal" style="padding:1.9rem">
 <h2 class="display md">Green Bhavya Mission</h2>
 <p style="color:var(--muted);margin-top:.5rem">Direction for ecosystem restoration. Detail grows with verified documentation.</p>
 <a class="btn btn-p" style="margin-top:1rem" href="/missions/forest">Forest Mission →</a>
-</div></div></section></main>
-<footer><div class="wrap"><div class="finner glass-dark"><p class="fbrand">Bhavya Foundation</p></div></div></footer>
-</body></html>
+</div></div></section>
+</main>
+<footer><div class="wrap"><div class="finner glass-dark">
+<p class="fbrand"><img src="/assets/brand/logo-64.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
+<div class="fbot"><span>© Bhavya Foundation</span></div>
+</div></div></footer>
+<script>
+(function(){var btn=document.getElementById('menuBtn');var nav=document.getElementById('mobNav');
+if(btn&&nav){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});}
+document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+})();
+</script>
+</body>
+</html>
