@@ -8,16 +8,16 @@
 <link rel="icon" type="image/png" href="/assets/brand/logo.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
+<style>
+.panel{min-height:280px;border-radius:var(--r-lg);background:linear-gradient(155deg,#0B2E24,#163d2a 50%,#1a4a5e);box-shadow:var(--sh);position:relative;overflow:hidden}
+.panel::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 80% 15%,rgba(212,175,55,.22),transparent 55%)}
+</style>
 </head>
 <body>
 <header id="siteHeader">
   <div class="wrap"><div class="bar glass">
     <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
-    <nav class="nav" aria-label="Primary">
-      <a href="/">Home</a><a href="/missions/">Missions</a>
-      <a href="/knowledge/">Knowledge</a>
-      <a class="nav-cta" href="/support">Support Us</a>
-    </nav>
+    <nav class="nav" aria-label="Primary"><a href="/">Home</a><a href="/missions/">Missions</a><a href="/knowledge/">Knowledge</a><a class="nav-cta" href="/support">Support Us</a></nav>
     <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
   </div>
   <nav class="mob glass" id="mobNav"><a href="/missions/">Missions</a><a href="/knowledge/">Knowledge</a><a href="/support">Support Us</a></nav>
@@ -31,7 +31,7 @@
 <p class="lede">AI Labs. Digital pathways. Research. Literacy.</p>
 </div></section>
 <section class="sec" style="padding-top:.5rem"><div class="wrap grid-2">
-<div class="split-visual reveal"><img src="/assets/brand/knowledge.png" alt="" width="800" height="500"/><div class="shade"></div></div>
+<div class="panel reveal" role="img" aria-label="Knowledge mission visual"></div>
 <div class="glass prose reveal" style="padding:1.9rem">
 <p>The Knowledge Mission builds capability — from digital literacy to responsible research.</p>
 <ul>
@@ -39,8 +39,7 @@
 <li><a href="/knowledge/digital-institute"><strong>Digital Institute</strong></a> — practical learning pathways</li>
 <li><strong>AI Education</strong> — a programme inside the Digital Institute, not a separate product</li>
 </ul>
-</div>
-</div>
+</div></div>
 <div class="wrap row" style="margin-top:1.6rem">
 <a class="btn btn-g" href="/missions/">All missions</a>
 <a class="btn btn-p" href="/knowledge/">Knowledge home →</a>

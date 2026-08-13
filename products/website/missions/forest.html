@@ -9,6 +9,10 @@
 <link rel="icon" type="image/png" href="/assets/brand/logo.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
+<style>
+.panel{min-height:280px;border-radius:var(--r-lg);background:linear-gradient(155deg,#0B2E24,#1A5E2F 55%,#2d6a3e);box-shadow:var(--sh);position:relative;overflow:hidden}
+.panel::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 80% 15%,rgba(212,175,55,.22),transparent 55%)}
+</style>
 </head>
 <body>
 <header id="siteHeader">
@@ -22,9 +26,8 @@
     </nav>
     <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
   </div>
-  <nav class="mob glass" id="mobNav" aria-label="Mobile">
-    <a href="/missions/">Missions</a><a href="/missions/forest">Forest</a><a href="/knowledge/">Knowledge</a><a href="/support">Support Us</a>
-  </nav></div>
+  <nav class="mob glass" id="mobNav"><a href="/missions/">Missions</a><a href="/missions/forest">Forest</a><a href="/knowledge/">Knowledge</a><a href="/support">Support Us</a></nav>
+  </div>
 </header>
 <main>
 <section class="page-hero"><div class="wrap">
@@ -34,7 +37,7 @@
 <p class="lede">Restore ecosystems. Protect biodiversity. Increase forest cover. Conserve water.</p>
 </div></section>
 <section class="sec" style="padding-top:.5rem"><div class="wrap grid-2">
-<div class="split-visual reveal"><img src="/assets/brand/Forest.png" alt="Forest landscape" width="800" height="500"/><div class="shade"></div></div>
+<div class="panel reveal" role="img" aria-label="Forest mission visual"></div>
 <div class="glass prose reveal" style="padding:1.9rem">
 <p>The Forest Mission is Bhavya’s commitment to environmental stewardship — especially across Himalayan landscapes.</p>
 <ul><li>Native forest restoration and long-term care</li><li>Water security and watershed health</li><li>Biodiversity protection</li><li>Climate resilience</li></ul>

@@ -8,16 +8,16 @@
 <link rel="icon" type="image/png" href="/assets/brand/logo.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
+<style>
+.panel{min-height:280px;border-radius:var(--r-lg);background:linear-gradient(155deg,#2a2418,#4a3a28 55%,#3d3220);box-shadow:var(--sh);position:relative;overflow:hidden}
+.panel::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 80% 15%,rgba(212,175,55,.25),transparent 55%)}
+</style>
 </head>
 <body>
 <header id="siteHeader">
   <div class="wrap"><div class="bar glass">
     <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
-    <nav class="nav" aria-label="Primary">
-      <a href="/">Home</a><a href="/missions/">Missions</a>
-      <a href="/missions/heritage" aria-current="page">Heritage</a>
-      <a class="nav-cta" href="/support">Support Us</a>
-    </nav>
+    <nav class="nav" aria-label="Primary"><a href="/">Home</a><a href="/missions/">Missions</a><a href="/missions/heritage" aria-current="page">Heritage</a><a class="nav-cta" href="/support">Support Us</a></nav>
     <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
   </div>
   <nav class="mob glass" id="mobNav"><a href="/missions/">Missions</a><a href="/missions/heritage">Heritage</a><a href="/support">Support Us</a></nav>
@@ -31,7 +31,7 @@
 <p class="lede">Traditional knowledge, culture, architecture — lawful and community-centred.</p>
 </div></section>
 <section class="sec" style="padding-top:.5rem"><div class="wrap grid-2">
-<div class="split-visual reveal"><img src="/assets/brand/Hero.png" alt="" width="800" height="500"/><div class="shade"></div></div>
+<div class="panel reveal" role="img" aria-label="Heritage mission visual"></div>
 <div class="glass prose reveal" style="padding:1.9rem">
 <p>The Heritage Mission preserves collective memory without spectacle.</p>
 <ul><li>Traditional knowledge and living heritage</li><li>Architecture and cultural documentation</li><li>History and local memory — with consent and care</li></ul>
