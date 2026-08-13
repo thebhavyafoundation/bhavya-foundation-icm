@@ -13,6 +13,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
+<style>
+/* Brand visual panels — no photo assets required */
+.hero-panel{
+  min-height:320px;border-radius:var(--r-lg);position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%,rgba(212,175,55,.28),transparent 55%),
+    radial-gradient(ellipse 60% 50% at 20% 80%,rgba(106,143,110,.35),transparent 50%),
+    linear-gradient(155deg,#0B2E24 0%,#0E3B2E 40%,#1A5E2F 75%,#163d2a 100%);
+  box-shadow:var(--sh);
+}
+.hero-panel::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(160deg,rgba(11,46,36,.15),rgba(11,46,36,.45) 60%,rgba(74,52,40,.25));
+  pointer-events:none;
+}
+.hero-panel .tag{position:absolute;left:1.15rem;bottom:1.15rem;z-index:2;
+  background:rgba(11,46,36,.68);backdrop-filter:blur(10px);color:var(--ivory);
+  padding:.55rem 1rem;border-radius:.65rem;font-size:.82rem;font-weight:500;
+  border:1px solid rgba(255,255,255,.12)}
+.m-card .bg-fill{
+  position:absolute;inset:0;z-index:0;
+  background:linear-gradient(160deg,#0B2E24,#1A5E2F 55%,#0E3B2E);
+}
+.m-card.forest .bg-fill{background:linear-gradient(160deg,#0B2E24,#1A5E2F,#2d6a3e)}
+.m-card.knowledge .bg-fill{background:linear-gradient(160deg,#0B2E24,#163d2a,#1a4a5e)}
+.m-card.heritage .bg-fill{background:linear-gradient(160deg,#2a2418,#4a3a28,#3d3220)}
+.m-card.community .bg-fill{background:linear-gradient(160deg,#1a2e24,#2a4a3a,#1A5E2F)}
+.m-card .bg-fill::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 50% at 80% 10%,rgba(212,175,55,.2),transparent 55%);
+}
+</style>
 </head>
 <body>
 <header id="siteHeader">
@@ -51,9 +83,7 @@
         <a class="btn btn-g" href="/knowledge/">Knowledge Mission</a>
       </div>
     </div>
-    <div class="hero-visual reveal">
-      <img src="/assets/brand/Hero.png" alt="Himalayan forest landscape — Bhavya Forest Mission" width="1200" height="800" fetchpriority="high"/>
-      <div class="overlay"></div>
+    <div class="hero-panel reveal" role="img" aria-label="Himalayan forest landscape — brand visual">
       <span class="tag">Forest · Himalayan stewardship</span>
     </div>
   </div>
@@ -66,23 +96,23 @@
       <hr class="gold-line"/>
     </div>
     <div class="mission-grid">
-      <a class="m-card featured reveal" href="/missions/forest">
-        <div class="bg"><img src="/assets/brand/Forest.png" alt="" width="800" height="500"/></div>
+      <a class="m-card featured forest reveal" href="/missions/forest">
+        <div class="bg-fill"></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Forest</span><h3>Restore ecosystems</h3><p>Native forests, water security, biodiversity and climate resilience across Himalayan landscapes.</p><span class="go">Forest Mission →</span></div>
       </a>
-      <a class="m-card reveal" href="/missions/knowledge">
-        <div class="bg"><img src="/assets/brand/knowledge.png" alt="" width="800" height="500"/></div>
+      <a class="m-card knowledge reveal" href="/missions/knowledge">
+        <div class="bg-fill"></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Knowledge</span><h3>Advance learning</h3><p>AI Lab research and Digital Institute pathways.</p><span class="go">Explore →</span></div>
       </a>
-      <a class="m-card reveal" href="/missions/heritage">
-        <div class="bg"><img src="/assets/brand/Hero.png" alt="" width="800" height="500"/></div>
+      <a class="m-card heritage reveal" href="/missions/heritage">
+        <div class="bg-fill"></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Heritage</span><h3>Preserve memory</h3><p>Culture, traditions, architecture — lawful and community-centred.</p><span class="go">Explore →</span></div>
       </a>
-      <a class="m-card reveal" href="/missions/community">
-        <div class="bg"><img src="/assets/brand/Forest.png" alt="" width="800" height="500"/></div>
+      <a class="m-card community reveal" href="/missions/community">
+        <div class="bg-fill"></div>
         <div class="shade"></div>
         <div class="body"><span class="l">Community</span><h3>Empower people</h3><p>Youth, women, schools and volunteers — capability over dependency.</p><span class="go">Explore →</span></div>
       </a>
@@ -101,9 +131,8 @@
           <a class="btn btn-g" href="/knowledge/ai-lab" style="border-color:rgba(255,255,255,.25);color:#fff;background:rgba(255,255,255,.08)">AI Lab</a>
         </div>
       </div>
-      <div class="split-visual reveal">
-        <img src="/assets/brand/knowledge.png" alt="Knowledge Mission" width="960" height="640"/>
-        <div class="shade"></div>
+      <div class="hero-panel reveal" role="img" aria-label="Knowledge Mission visual" style="min-height:280px">
+        <span class="tag">AI Lab · Digital Institute</span>
       </div>
     </div>
   </div>
