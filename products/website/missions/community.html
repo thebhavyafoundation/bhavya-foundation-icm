@@ -4,23 +4,52 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Community Mission — Bhavya Foundation</title>
-<link rel="stylesheet" href="/css/site.css"/>
+<meta name="theme-color" content="#0E3B2E"/>
+<link rel="icon" type="image/png" href="/assets/brand/logo-64.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/site.css"/>
 </head>
 <body>
-<header><div class="wrap"><div class="bar glass">
-<a class="brand" href="/">Bhavya Foundation</a>
-<nav class="nav"><a href="/">Home</a><a href="/missions/" aria-current="page">Missions</a><a class="nav-cta" href="/support">Support Us</a></nav>
-</div></div></header>
-<main><section class="sec"><div class="wrap">
-<nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/missions/">Missions</a><span>/</span>Community</nav>
+<header id="siteHeader">
+  <div class="wrap"><div class="bar glass">
+    <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/">Home</a><a href="/missions/">Missions</a>
+      <a href="/missions/community" aria-current="page">Community</a>
+      <a class="nav-cta" href="/support">Support Us</a>
+    </nav>
+    <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
+  </div>
+  <nav class="mob glass" id="mobNav"><a href="/missions/">Missions</a><a href="/missions/community">Community</a><a href="/support">Support Us</a></nav>
+  </div>
+</header>
+<main>
+<section class="page-hero"><div class="wrap">
+<nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/missions/">Missions</a><span>/</span>Community Mission</nav>
 <p class="eyebrow">Community</p>
-<h1 class="display lg" style="margin:.4rem 0 1rem">Community Mission</h1>
+<h1 class="display lg" style="margin:.4rem 0 .6rem">Community Mission</h1>
 <p class="lede">Youth, women, schools, leadership, and volunteerism — capability over dependency.</p>
-<div class="glass prose" style="padding:1.8rem;margin-top:1.8rem">
+</div></section>
+<section class="sec" style="padding-top:.5rem"><div class="wrap grid-2">
+<div class="split-visual reveal"><img src="/assets/missions/community-bg.jpg" alt="" width="800" height="500"/><div class="shade"></div></div>
+<div class="glass prose reveal" style="padding:1.9rem">
+<p>The Community Mission strengthens local capacity so people can sustain progress themselves.</p>
 <ul><li>Youth leadership and education pathways</li><li>Women’s participation and economic agency</li><li>School partnerships</li><li>Bhavya Volunteer Corps</li></ul>
-</div>
-<div class="row" style="margin-top:1.5rem"><a class="btn btn-g" href="/missions/">All missions</a></div>
-</div></section></main>
-<footer><div class="wrap"><div class="finner glass-dark"><p class="fbrand">Bhavya Foundation</p></div></div></footer>
-</body></html>
+</div></div>
+<div class="wrap row" style="margin-top:1.6rem">
+<a class="btn btn-g" href="/missions/">All missions</a>
+<a class="btn btn-p" href="/participate">Participate →</a>
+</div></section>
+</main>
+<footer><div class="wrap"><div class="finner glass-dark">
+<p class="fbrand"><img src="/assets/brand/logo-64.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
+<div class="fbot"><span>© Bhavya Foundation</span></div>
+</div></div></footer>
+<script>
+(function(){var btn=document.getElementById('menuBtn');var nav=document.getElementById('mobNav');
+if(btn&&nav){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});}
+document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+})();
+</script>
+</body>
+</html>
