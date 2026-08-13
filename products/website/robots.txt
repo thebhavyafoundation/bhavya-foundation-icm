@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://bhavya-foundation-public.vercel.app/sitemap.xml
