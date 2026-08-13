@@ -4,53 +4,113 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>AI Lab — Bhavya Foundation</title>
-<meta name="description" content="Bhavya AI Lab within the Knowledge Mission."/>
-<meta name="theme-color" content="#0E3B2E"/>
-<link rel="icon" type="image/png" href="/assets/brand/logo-64.png"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+<meta name="description" content="Responsible AI research for real-world problems."/>
+<meta name="theme-color" content="#0B2E24"/>
+<link rel="icon" type="image/png" href="/assets/brand/logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
 </head>
 <body>
 <header id="siteHeader">
-  <div class="wrap"><div class="bar glass">
-    <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
-    <nav class="nav" aria-label="Primary">
-      <a href="/">Home</a><a href="/knowledge/" aria-current="page">Knowledge</a>
-      <a class="nav-cta" href="/support">Support Us</a>
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="/"><img src="/assets/brand/logo.png" width="38" height="38" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/missions/">Missions</a>
+        <a href="/missions/forest">Forest</a>
+        <a href="/knowledge/">Knowledge</a>
+        <a href="/missions/heritage">Heritage</a>
+        <a href="/missions/community">Community</a>
+        <a href="/about">About</a>
+        <a class="nav-cta" href="/support">Support</a>
+      </nav>
+      <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-controls="mobNav" aria-label="Open menu">☰</button>
+    </div>
+    <nav class="mob" id="mobNav" aria-label="Mobile">
+      <a href="/missions/">Missions</a>
+      <a href="/missions/forest">Forest</a>
+      <a href="/knowledge/">Knowledge</a>
+      <a href="/missions/heritage">Heritage</a>
+      <a href="/missions/community">Community</a>
+      <a href="/about">About</a>
+      <a href="/participate">Participate</a>
+      <a href="/support">Support</a>
     </nav>
-    <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
-  </div>
-  <nav class="mob glass" id="mobNav"><a href="/knowledge/">Knowledge</a><a href="/support">Support Us</a></nav>
   </div>
 </header>
+
 <main>
-<section class="page-hero"><div class="wrap">
-<nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/knowledge/">Knowledge</a><span>/</span>AI Lab</nav>
-<p class="eyebrow">Knowledge Mission · Institute</p>
-<h1 class="display lg" style="margin:.4rem 0 .6rem">Bhavya AI Lab</h1>
-<p class="lede">The experimental and research engine of the Knowledge Mission.</p>
-</div></section>
-<section class="sec" style="padding-top:.5rem"><div class="wrap">
-<div class="glass prose reveal" style="padding:1.9rem">
-<p>Responsible AI in service of people, nature, and institutions.</p>
-<ul><li><strong>Research</strong> — evaluations, ethics, benchmarks</li>
-<li><strong>Experiments</strong> — prototypes, models, datasets</li>
-<li><strong>Applications</strong> — tools for Forest, Heritage, Community, and Knowledge</li></ul>
-<p class="note">AI education is delivered via the Digital Institute programme. The AI Lab is not an AI product company.</p>
-</div>
-<div class="row" style="margin-top:1.4rem">
-<a class="btn btn-g" href="/knowledge/">Knowledge home</a>
-<a class="btn btn-p" href="/knowledge/digital-institute">Digital Institute →</a>
-</div></div></section>
+  <section class="page-hero-bleed focal-ailab">
+    <img class="hero-img" src="/assets/knowledge/ai-lab/hero.webp" alt="AI Lab research atmosphere" width="1600" height="900" fetchpriority="high"/>
+    <div class="hero-shade"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">Knowledge Mission</p>
+      <h1 class="display xl">AI Lab</h1>
+      <hr class="gold-rule"/>
+      <p class="lede">Responsible AI. Research for real-world problems.</p>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="approach-grid">
+        <div class="approach-item reveal"><p class="eyebrow">Focus</p><h3>Research</h3><p>Questions worth investigating — quiet science, not spectacle.</p></div>
+        <div class="approach-item reveal"><p class="eyebrow">Focus</p><h3>Experiments</h3><p>Bounded trials with recorded methods and results.</p></div>
+        <div class="approach-item reveal"><p class="eyebrow">Focus</p><h3>Responsible AI</h3><p>Safety, evaluation, and honest limits.</p></div>
+      </div>
+      <p class="note reveal">AI Lab owns research and experimentation. Digital Institute owns education delivery.</p>
+      <div class="row" style="margin-top:1.5rem">
+        <a class="btn btn-p" href="/research">Research</a>
+        <a class="btn btn-s" href="/knowledge/">Knowledge Mission</a>
+      </div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap"><div class="finner glass-dark">
-<p class="fbrand"><img src="/assets/brand/logo-64.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
-<div class="fbot"><span>© Bhavya Foundation</span></div>
-</div></div></footer>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <p class="fbrand"><img src="/assets/brand/logo.png" width="30" height="30" alt=""/> Bhavya Foundation</p>
+        <p style="font-size:0.9rem;max-width:18rem;opacity:0.85">Nature. Knowledge. Heritage. Building for generations.</p>
+      </div>
+      <div class="fcol"><h4>Missions</h4>
+        <a href="/missions/forest">Forest</a>
+        <a href="/missions/knowledge">Knowledge</a>
+        <a href="/missions/heritage">Heritage</a>
+        <a href="/missions/community">Community</a>
+      </div>
+      <div class="fcol"><h4>Knowledge</h4>
+        <a href="/knowledge/ai-lab">AI Lab</a>
+        <a href="/knowledge/digital-institute">Digital Institute</a>
+        <a href="/research">Research</a>
+      </div>
+      <div class="fcol"><h4>Engage</h4>
+        <a href="/about">About</a>
+        <a href="/participate">Participate</a>
+        <a href="/support">Support</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© Bhavya Foundation</span>
+      <span>Evidence before claims · Building for generations</span>
+    </div>
+  </div>
+</footer>
+<script src="/js/nav.js"></script>
 <script>
-(function(){var btn=document.getElementById('menuBtn');var nav=document.getElementById('mobNav');
-if(btn&&nav){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});}
-document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+(function(){
+  var hdr=document.getElementById('siteHeader');
+  if(hdr){var onScroll=function(){hdr.classList.toggle('scrolled',window.scrollY>20);};window.addEventListener('scroll',onScroll,{passive:true});onScroll();}
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -30px 0px'});
+      els.forEach(function(el){io.observe(el);});
+    } else {els.forEach(function(el){el.classList.add('in');});}
+  } else {document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
 })();
 </script>
 </body>

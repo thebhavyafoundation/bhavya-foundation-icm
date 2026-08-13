@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+  <path d="M8 72 C12 48, 28 28, 52 18" stroke="#1A5E2F" stroke-width="1.2" opacity=".5"/>
+  <path d="M52 18 C44 28, 36 40, 32 52" stroke="#6A8F6E" stroke-width="1" opacity=".45"/>
+  <path d="M40 30 C48 24, 60 22, 68 28 C58 32, 48 36, 40 30Z" fill="rgba(26,94,47,.12)" stroke="#1A5E2F" stroke-width="1"/>
+  <path d="M28 48 C34 42, 44 40, 50 46 C42 50, 34 52, 28 48Z" fill="rgba(106,143,110,.15)" stroke="#6A8F6E" stroke-width="1"/>
+</svg>

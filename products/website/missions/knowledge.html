@@ -4,54 +4,144 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Knowledge Mission — Bhavya Foundation</title>
-<meta name="theme-color" content="#0E3B2E"/>
-<link rel="icon" type="image/png" href="/assets/brand/logo-64.png"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+<meta name="description" content="Learning, research, and responsible technology — AI Lab and Digital Institute."/>
+<meta name="theme-color" content="#0B2E24"/>
+<link rel="icon" type="image/png" href="/assets/brand/logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
-<style>
-.split-visual{border-radius:var(--r-lg);overflow:hidden;min-height:280px;box-shadow:var(--sh);position:relative}
-.split-visual img{width:100%;height:100%;object-fit:cover;min-height:280px}
-.split-visual .shade{position:absolute;inset:0;background:linear-gradient(145deg,rgba(11,46,36,.2),rgba(11,46,36,.45))}
-.gold-rule{width:3rem;height:2px;background:linear-gradient(90deg,var(--gold),transparent);border:none;margin:.55rem 0 1rem}
-</style>
 </head>
 <body>
 <header id="siteHeader">
-  <div class="wrap"><div class="bar glass">
-    <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
-    <nav class="nav" aria-label="Primary"><a href="/">Home</a><a href="/missions/">Missions</a><a href="/missions/knowledge" aria-current="page">Knowledge</a><a class="nav-cta" href="/support">Support Us</a></nav>
-    <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
-  </div>
-  <nav class="mob glass" id="mobNav"><a href="/missions/">Missions</a><a href="/knowledge/">Knowledge</a><a href="/support">Support Us</a></nav>
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="/"><img src="/assets/brand/logo.png" width="38" height="38" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/missions/">Missions</a>
+        <a href="/missions/forest">Forest</a>
+        <a href="/knowledge/">Knowledge</a>
+        <a href="/missions/heritage">Heritage</a>
+        <a href="/missions/community">Community</a>
+        <a href="/about">About</a>
+        <a class="nav-cta" href="/support">Support</a>
+      </nav>
+      <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-controls="mobNav" aria-label="Open menu">☰</button>
+    </div>
+    <nav class="mob" id="mobNav" aria-label="Mobile">
+      <a href="/missions/">Missions</a>
+      <a href="/missions/forest">Forest</a>
+      <a href="/knowledge/">Knowledge</a>
+      <a href="/missions/heritage">Heritage</a>
+      <a href="/missions/community">Community</a>
+      <a href="/about">About</a>
+      <a href="/participate">Participate</a>
+      <a href="/support">Support</a>
+    </nav>
   </div>
 </header>
+
 <main>
-<section class="page-hero"><div class="wrap">
-<nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/missions/">Missions</a><span>/</span>Knowledge Mission</nav>
-<p class="eyebrow">Knowledge</p>
-<h1 class="display lg" style="margin:.4rem 0 .5rem">Knowledge Mission</h1>
-<hr class="gold-rule"/>
-<p class="lede">AI Labs. Digital pathways. Research. Literacy.</p>
-</div></section>
-<section class="sec" style="padding-top:.5rem"><div class="wrap grid-2">
-<div class="split-visual reveal"><img src="/assets/missions/knowledge-bg.jpg" alt="Knowledge mission" width="800" height="500"/><div class="shade"></div></div>
-<div class="glass prose reveal" style="padding:1.9rem">
-<p>The Knowledge Mission builds capability — from digital literacy to responsible research.</p>
-<ul><li><a href="/knowledge/ai-lab"><strong>AI Lab</strong></a> — research, experiments, responsible AI</li><li><a href="/knowledge/digital-institute"><strong>Digital Institute</strong></a> — practical learning pathways</li><li><strong>AI Education</strong> — a programme inside the Digital Institute, not a separate product</li></ul>
-</div></div>
-<div class="wrap row" style="margin-top:1.6rem">
-<a class="btn btn-g" href="/missions/">All missions</a>
-<a class="btn btn-p" href="/knowledge/">Knowledge home →</a>
-</div></section>
+  <section class="page-hero-bleed focal-knowledge">
+    <img class="hero-img" src="/assets/missions/knowledge/hero.webp" alt="Knowledge Mission atmosphere" width="1600" height="900" fetchpriority="high"/>
+    <div class="hero-shade"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">Mission</p>
+      <h1 class="display xl">Knowledge</h1>
+      <hr class="gold-rule"/>
+      <p class="lede">Learning for all. Innovation for impact.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="editorial-split">
+      <div class="editorial-image focal-research">
+        <img src="/assets/knowledge/ai-lab/hero.webp" alt="" width="1600" height="900" loading="lazy"/>
+      </div>
+      <div class="editorial-text on-dark">
+        <p class="eyebrow">Institute</p>
+        <h2 class="display md">AI Lab</h2>
+        <hr class="gold-rule"/>
+        <p class="lede">Researching responsible AI for real-world problems — quiet science, not spectacle.</p>
+        <div class="row" style="margin-top:1.25rem">
+          <a class="btn btn-on-dark" href="/knowledge/ai-lab">Enter AI Lab</a>
+        </div>
+      </div>
+    </div>
+    <div class="editorial-split reverse">
+      <div class="editorial-image focal-learning">
+        <img src="/assets/knowledge/digital-institute/hero.webp" alt="" width="1600" height="900" loading="lazy"/>
+      </div>
+      <div class="editorial-text">
+        <p class="eyebrow">Institute</p>
+        <h2 class="display md">Digital Institute</h2>
+        <hr class="gold-rule"/>
+        <p class="lede">Building practical technology capability. AI Education is a programme inside the Digital Institute — not a separate product.</p>
+        <div class="row" style="margin-top:1.25rem">
+          <a class="btn btn-p" href="/knowledge/digital-institute">Enter Digital Institute</a>
+        </div>
+      </div>
+    </div>
+    <div class="editorial-split">
+      <div class="editorial-image focal-research">
+        <img src="/assets/knowledge/research/hero.webp" alt="" width="1600" height="900" loading="lazy"/>
+      </div>
+      <div class="editorial-text on-dark">
+        <p class="eyebrow">Practice</p>
+        <h2 class="display md">Research</h2>
+        <hr class="gold-rule"/>
+        <p class="lede">Evidence for better decisions — questions worth investigating, findings worth recording.</p>
+        <div class="row" style="margin-top:1.25rem">
+          <a class="btn btn-on-dark" href="/research">Explore research</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap"><div class="finner glass-dark">
-<p class="fbrand"><img src="/assets/brand/logo-64.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
-<div class="fbot"><span>© Bhavya Foundation</span></div>
-</div></div></footer>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <p class="fbrand"><img src="/assets/brand/logo.png" width="30" height="30" alt=""/> Bhavya Foundation</p>
+        <p style="font-size:0.9rem;max-width:18rem;opacity:0.85">Nature. Knowledge. Heritage. Building for generations.</p>
+      </div>
+      <div class="fcol"><h4>Missions</h4>
+        <a href="/missions/forest">Forest</a>
+        <a href="/missions/knowledge">Knowledge</a>
+        <a href="/missions/heritage">Heritage</a>
+        <a href="/missions/community">Community</a>
+      </div>
+      <div class="fcol"><h4>Knowledge</h4>
+        <a href="/knowledge/ai-lab">AI Lab</a>
+        <a href="/knowledge/digital-institute">Digital Institute</a>
+        <a href="/research">Research</a>
+      </div>
+      <div class="fcol"><h4>Engage</h4>
+        <a href="/about">About</a>
+        <a href="/participate">Participate</a>
+        <a href="/support">Support</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© Bhavya Foundation</span>
+      <span>Evidence before claims · Building for generations</span>
+    </div>
+  </div>
+</footer>
+<script src="/js/nav.js"></script>
 <script>
-(function(){var btn=document.getElementById('menuBtn');var nav=document.getElementById('mobNav');
-if(btn&&nav){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});}
-document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+(function(){
+  var hdr=document.getElementById('siteHeader');
+  if(hdr){var onScroll=function(){hdr.classList.toggle('scrolled',window.scrollY>20);};window.addEventListener('scroll',onScroll,{passive:true});onScroll();}
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -30px 0px'});
+      els.forEach(function(el){io.observe(el);});
+    } else {els.forEach(function(el){el.classList.add('in');});}
+  } else {document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
 })();
 </script>
 </body>

@@ -49,6 +49,7 @@ ul { list-style: none; padding: 0; }
   margin-inline: auto;
 }
 
+/* Typography */
 .eyebrow {
   font-size: 0.7rem;
   font-weight: 600;
@@ -80,6 +81,7 @@ ul { list-style: none; padding: 0; }
   margin: 0.85rem 0 1.1rem;
 }
 
+/* Buttons — square corners, solid */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -121,6 +123,7 @@ ul { list-style: none; padding: 0; }
   align-items: center;
 }
 
+/* Header — solid, quiet */
 #siteHeader {
   position: sticky;
   top: 0;
@@ -202,6 +205,7 @@ ul { list-style: none; padding: 0; }
   color: var(--forest);
 }
 
+/* Full-bleed hero */
 .hero-bleed {
   position: relative;
   min-height: min(88vh, 52rem);
@@ -237,6 +241,7 @@ ul { list-style: none; padding: 0; }
 .hero-bleed .lede { color: rgba(247, 244, 236, 0.9); }
 .hero-bleed .gold-rule { background: var(--gold); }
 
+/* Sections */
 .sec { padding: clamp(3.5rem, 8vw, 6rem) 0; }
 .sec-head {
   max-width: 36rem;
@@ -244,6 +249,7 @@ ul { list-style: none; padding: 0; }
 }
 .sec-head .display { margin: 0.4rem 0 0; }
 
+/* Missions — asymmetric editorial */
 .missions-editorial {
   display: grid;
   gap: 1.15rem;
@@ -323,10 +329,11 @@ ul { list-style: none; padding: 0; }
 .m-go {
   margin-top: 0.85rem;
   font-size: 0.86rem;
-  color: var(--gold-soft);
   font-weight: 600;
+  color: var(--gold-soft);
 }
 
+/* Knowledge band */
 .knowledge-band {
   background: var(--forest);
   color: var(--ivory);
@@ -379,6 +386,7 @@ ul { list-style: none; padding: 0; }
 }
 .knowledge-links a:hover { color: var(--gold-soft); }
 
+/* Approach */
 .approach { background: var(--stone); }
 .approach-grid {
   display: grid;
@@ -402,6 +410,7 @@ ul { list-style: none; padding: 0; }
   line-height: 1.6;
 }
 
+/* Participate */
 .participate {
   text-align: center;
   padding: clamp(3.5rem, 8vw, 5.5rem) 0;
@@ -409,6 +418,7 @@ ul { list-style: none; padding: 0; }
 .participate .display { margin: 0.5rem auto 0.85rem; }
 .participate .lede { margin-inline: auto; }
 
+/* Footer */
 footer {
   background: var(--forest);
   color: rgba(247, 244, 236, 0.88);
@@ -466,6 +476,7 @@ footer {
   color: rgba(247, 244, 236, 0.55);
 }
 
+/* Inner page hero */
 .page-hero {
   padding: clamp(3rem, 7vw, 5rem) 0 clamp(2rem, 4vw, 3rem);
   border-bottom: 1px solid var(--line);
@@ -515,7 +526,7 @@ footer {
   .reveal.in { opacity: 1; transform: none; }
 }
 
-/* W38 certified: page heroes, world-stack, editorial splits */
+/* ——— Page-specific full-bleed heroes ——— */
 .page-hero-bleed {
   position: relative;
   min-height: min(75vh, 40rem);
@@ -560,6 +571,7 @@ footer {
 .page-hero-bleed .display { color: #fff; }
 .page-hero-bleed .lede { color: rgba(247,244,236,0.9); }
 
+/* Stacked full-bleed mission worlds (missions index) */
 .world-stack .world {
   position: relative;
   min-height: min(70vh, 36rem);
@@ -595,6 +607,7 @@ footer {
 .world .display { color: #fff; }
 .world .lede { color: rgba(247,244,236,0.9); }
 
+/* Editorial split sections */
 .editorial-split {
   display: grid;
   gap: 0;
@@ -641,3 +654,4 @@ footer {
 }
 .editorial-text.on-dark .display { color: #fff; }
 .editorial-text.on-dark .lede { color: rgba(247,244,236,0.88); }
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Research — Bhavya Foundation</title>
+<meta name="description" content="Questions worth investigating. Evidence worth building."/>
+<meta name="theme-color" content="#0B2E24"/>
+<link rel="icon" type="image/png" href="/assets/brand/logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/site.css"/>
+</head>
+<body>
+<header id="siteHeader">
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="/"><img src="/assets/brand/logo.png" width="38" height="38" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/missions/">Missions</a>
+        <a href="/missions/forest">Forest</a>
+        <a href="/knowledge/">Knowledge</a>
+        <a href="/missions/heritage">Heritage</a>
+        <a href="/missions/community">Community</a>
+        <a href="/about">About</a>
+        <a class="nav-cta" href="/support">Support</a>
+      </nav>
+      <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-controls="mobNav" aria-label="Open menu">☰</button>
+    </div>
+    <nav class="mob" id="mobNav" aria-label="Mobile">
+      <a href="/missions/">Missions</a>
+      <a href="/missions/forest">Forest</a>
+      <a href="/knowledge/">Knowledge</a>
+      <a href="/missions/heritage">Heritage</a>
+      <a href="/missions/community">Community</a>
+      <a href="/about">About</a>
+      <a href="/participate">Participate</a>
+      <a href="/support">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero-bleed focal-research">
+    <img class="hero-img" src="/assets/knowledge/research/hero.webp" alt="Research atmosphere" width="1600" height="900" fetchpriority="high"/>
+    <div class="hero-shade"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">Knowledge Mission</p>
+      <h1 class="display xl">Research</h1>
+      <hr class="gold-rule"/>
+      <p class="lede">Questions worth investigating. Evidence worth building.</p>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap">
+      <div class="approach-grid">
+        <div class="approach-item reveal"><p class="eyebrow">Practice</p><h3>Research Areas</h3><p>Questions grounded in mission need.</p></div>
+        <div class="approach-item reveal"><p class="eyebrow">Practice</p><h3>Experiments</h3><p>Bounded trials with recorded methods.</p></div>
+        <div class="approach-item reveal"><p class="eyebrow">Practice</p><h3>Evidence</h3><p>Findings that can be inspected and reused.</p></div>
+      </div>
+      <p class="note reveal">Research outputs become knowledge objects with provenance.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <p class="fbrand"><img src="/assets/brand/logo.png" width="30" height="30" alt=""/> Bhavya Foundation</p>
+        <p style="font-size:0.9rem;max-width:18rem;opacity:0.85">Nature. Knowledge. Heritage. Building for generations.</p>
+      </div>
+      <div class="fcol"><h4>Missions</h4>
+        <a href="/missions/forest">Forest</a>
+        <a href="/missions/knowledge">Knowledge</a>
+        <a href="/missions/heritage">Heritage</a>
+        <a href="/missions/community">Community</a>
+      </div>
+      <div class="fcol"><h4>Knowledge</h4>
+        <a href="/knowledge/ai-lab">AI Lab</a>
+        <a href="/knowledge/digital-institute">Digital Institute</a>
+        <a href="/research">Research</a>
+      </div>
+      <div class="fcol"><h4>Engage</h4>
+        <a href="/about">About</a>
+        <a href="/participate">Participate</a>
+        <a href="/support">Support</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© Bhavya Foundation</span>
+      <span>Evidence before claims · Building for generations</span>
+    </div>
+  </div>
+</footer>
+<script src="/js/nav.js"></script>
+<script>
+(function(){
+  var hdr=document.getElementById('siteHeader');
+  if(hdr){var onScroll=function(){hdr.classList.toggle('scrolled',window.scrollY>20);};window.addEventListener('scroll',onScroll,{passive:true});onScroll();}
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -30px 0px'});
+      els.forEach(function(el){io.observe(el);});
+    } else {els.forEach(function(el){el.classList.add('in');});}
+  } else {document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
+</body>
+</html>

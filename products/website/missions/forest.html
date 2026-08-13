@@ -4,60 +4,160 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Forest Mission — Bhavya Foundation</title>
-<meta name="theme-color" content="#0E3B2E"/>
-<link rel="icon" type="image/png" href="/assets/brand/logo-64.png"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+<meta name="description" content="Restoring ecosystems and securing the future across Himalayan landscapes."/>
+<meta name="theme-color" content="#0B2E24"/>
+<link rel="icon" type="image/png" href="/assets/brand/logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/css/site.css"/>
-<style>
-.split-visual{border-radius:var(--r-lg);overflow:hidden;min-height:280px;box-shadow:var(--sh);position:relative}
-.split-visual img{width:100%;height:100%;object-fit:cover;min-height:280px}
-.split-visual .shade{position:absolute;inset:0;background:linear-gradient(145deg,rgba(11,46,36,.2),rgba(11,46,36,.45))}
-.gold-rule{width:3rem;height:2px;background:linear-gradient(90deg,var(--gold),transparent);border:none;margin:.55rem 0 1rem}
-</style>
 </head>
 <body>
 <header id="siteHeader">
-  <div class="wrap"><div class="bar glass">
-    <a class="brand" href="/"><img src="/assets/brand/logo.png" width="40" height="40" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
-    <nav class="nav" aria-label="Primary">
-      <a href="/">Home</a><a href="/missions/">Missions</a>
-      <a href="/missions/forest" aria-current="page">Forest</a>
-      <a class="nav-cta" href="/support">Support Us</a>
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="/"><img src="/assets/brand/logo.png" width="38" height="38" alt="Bhavya Foundation logo"/><span>Bhavya Foundation<small>Nature · Knowledge · Heritage</small></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/missions/">Missions</a>
+        <a href="/missions/forest">Forest</a>
+        <a href="/knowledge/">Knowledge</a>
+        <a href="/missions/heritage">Heritage</a>
+        <a href="/missions/community">Community</a>
+        <a href="/about">About</a>
+        <a class="nav-cta" href="/support">Support</a>
+      </nav>
+      <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-controls="mobNav" aria-label="Open menu">☰</button>
+    </div>
+    <nav class="mob" id="mobNav" aria-label="Mobile">
+      <a href="/missions/">Missions</a>
+      <a href="/missions/forest">Forest</a>
+      <a href="/knowledge/">Knowledge</a>
+      <a href="/missions/heritage">Heritage</a>
+      <a href="/missions/community">Community</a>
+      <a href="/about">About</a>
+      <a href="/participate">Participate</a>
+      <a href="/support">Support</a>
     </nav>
-    <button type="button" class="menu" id="menuBtn" aria-expanded="false" aria-label="Open menu">☰</button>
-  </div>
-  <nav class="mob glass" id="mobNav"><a href="/missions/">Missions</a><a href="/missions/forest">Forest</a><a href="/support">Support Us</a></nav>
   </div>
 </header>
+
 <main>
-<section class="page-hero"><div class="wrap">
-<nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/missions/">Missions</a><span>/</span>Forest Mission</nav>
-<p class="eyebrow">Nature</p>
-<h1 class="display lg" style="margin:.4rem 0 .5rem">Forest Mission</h1>
-<hr class="gold-rule"/>
-<p class="lede">Restore ecosystems. Protect biodiversity. Increase forest cover. Conserve water.</p>
-</div></section>
-<section class="sec" style="padding-top:.5rem"><div class="wrap grid-2">
-<div class="split-visual reveal"><img src="/assets/missions/forest-bg.jpg" alt="Forest landscape" width="800" height="500"/><div class="shade"></div></div>
-<div class="glass prose reveal" style="padding:1.9rem">
-<p>The Forest Mission is Bhavya’s commitment to environmental stewardship — especially across Himalayan landscapes.</p>
-<ul><li>Native forest restoration and long-term care</li><li>Water security and watershed health</li><li>Biodiversity protection</li><li>Climate resilience</li></ul>
-<p class="note">Claims about hectares or impact are published only when documented. Evidence before claims.</p>
-</div>
-</div>
-<div class="wrap row" style="margin-top:1.6rem">
-<a class="btn btn-g" href="/missions/">All missions</a>
-<a class="btn btn-p" href="/participate">Participate →</a>
-</div></section>
+  <section class="page-hero-bleed focal-forest">
+    <img class="hero-img" src="/assets/missions/forest/hero.webp" alt="Himalayan forest landscape" width="1600" height="900" fetchpriority="high"/>
+    <div class="hero-shade"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">Mission</p>
+      <h1 class="display xl">Forest</h1>
+      <hr class="gold-rule"/>
+      <p class="lede">Restoring ecosystems. Securing the future.</p>
+      <div class="row" style="margin-top:1.5rem">
+        <a class="btn btn-on-dark" href="#work">Explore our work</a>
+        <a class="btn btn-ghost-dark" href="/participate">Get involved</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="editorial-split">
+      <div class="editorial-image focal-valley">
+        <img src="/assets/missions/forest/restoration.webp" alt="" width="1600" height="900" loading="lazy"/>
+      </div>
+      <div class="editorial-text">
+        <p class="eyebrow">Focus</p>
+        <h2 class="display md">Native Forest Restoration</h2>
+        <hr class="gold-rule"/>
+        <p class="lede">Restoring native cover, structure, and long-term stewardship across Himalayan landscapes.</p>
+      </div>
+    </div>
+    <div class="editorial-split reverse">
+      <div class="editorial-image focal-water">
+        <img src="/assets/missions/forest/water.webp" alt="" width="1600" height="900" loading="lazy"/>
+      </div>
+      <div class="editorial-text">
+        <p class="eyebrow">Focus</p>
+        <h2 class="display md">Water Security</h2>
+        <hr class="gold-rule"/>
+        <p class="lede">Watershed health, springs, and water systems as part of living forest ecology.</p>
+      </div>
+    </div>
+    <div class="editorial-split">
+      <div class="editorial-image focal-wildlife">
+        <img src="/assets/missions/forest/biodiversity.webp" alt="" width="1600" height="900" loading="lazy"/>
+      </div>
+      <div class="editorial-text">
+        <p class="eyebrow">Focus</p>
+        <h2 class="display md">Wildlife &amp; Biodiversity</h2>
+        <hr class="gold-rule"/>
+        <p class="lede">Habitat integrity and species continuity as measures of restoration quality.</p>
+      </div>
+    </div>
+    <div class="editorial-split reverse">
+      <div class="editorial-image focal-people">
+        <img src="/assets/missions/forest/stewardship.webp" alt="" width="1600" height="900" loading="lazy"/>
+      </div>
+      <div class="editorial-text">
+        <p class="eyebrow">Focus</p>
+        <h2 class="display md">Community Stewardship</h2>
+        <hr class="gold-rule"/>
+        <p class="lede">Local care and responsibility as the durable foundation of forest recovery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <p class="note">Claims about scale are published only when documented. Evidence before claims.</p>
+      <div class="row" style="margin-top:1.5rem">
+        <a class="btn btn-p" href="/participate">Participate</a>
+        <a class="btn btn-s" href="/missions/">All missions</a>
+      </div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap"><div class="finner glass-dark">
-<p class="fbrand"><img src="/assets/brand/logo-64.png" width="32" height="32" alt=""/> Bhavya Foundation</p>
-<div class="fbot"><span>© Bhavya Foundation</span><span>Evidence before claims</span></div>
-</div></div></footer>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <p class="fbrand"><img src="/assets/brand/logo.png" width="30" height="30" alt=""/> Bhavya Foundation</p>
+        <p style="font-size:0.9rem;max-width:18rem;opacity:0.85">Nature. Knowledge. Heritage. Building for generations.</p>
+      </div>
+      <div class="fcol"><h4>Missions</h4>
+        <a href="/missions/forest">Forest</a>
+        <a href="/missions/knowledge">Knowledge</a>
+        <a href="/missions/heritage">Heritage</a>
+        <a href="/missions/community">Community</a>
+      </div>
+      <div class="fcol"><h4>Knowledge</h4>
+        <a href="/knowledge/ai-lab">AI Lab</a>
+        <a href="/knowledge/digital-institute">Digital Institute</a>
+        <a href="/research">Research</a>
+      </div>
+      <div class="fcol"><h4>Engage</h4>
+        <a href="/about">About</a>
+        <a href="/participate">Participate</a>
+        <a href="/support">Support</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© Bhavya Foundation</span>
+      <span>Evidence before claims · Building for generations</span>
+    </div>
+  </div>
+</footer>
+<script src="/js/nav.js"></script>
 <script>
-(function(){var btn=document.getElementById('menuBtn');var nav=document.getElementById('mobNav');
-if(btn&&nav){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});}
-document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+(function(){
+  var hdr=document.getElementById('siteHeader');
+  if(hdr){var onScroll=function(){hdr.classList.toggle('scrolled',window.scrollY>20);};window.addEventListener('scroll',onScroll,{passive:true});onScroll();}
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -30px 0px'});
+      els.forEach(function(el){io.observe(el);});
+    } else {els.forEach(function(el){el.classList.add('in');});}
+  } else {document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
 })();
 </script>
 </body>
