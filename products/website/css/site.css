@@ -323,8 +323,8 @@ ul { list-style: none; padding: 0; }
 .m-go {
   margin-top: 0.85rem;
   font-size: 0.86rem;
-  font-weight: 600;
   color: var(--gold-soft);
+  font-weight: 600;
 }
 
 .knowledge-band {
@@ -514,3 +514,130 @@ footer {
   }
   .reveal.in { opacity: 1; transform: none; }
 }
+
+/* W38 certified: page heroes, world-stack, editorial splits */
+.page-hero-bleed {
+  position: relative;
+  min-height: min(75vh, 40rem);
+  display: flex;
+  align-items: flex-end;
+  color: var(--ivory);
+  overflow: hidden;
+}
+.page-hero-bleed .hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-hero-bleed.focal-forest .hero-img { object-position: 50% 40%; }
+.page-hero-bleed.focal-knowledge .hero-img { object-position: 40% 30%; }
+.page-hero-bleed.focal-heritage .hero-img { object-position: 50% 35%; }
+.page-hero-bleed.focal-community .hero-img { object-position: 45% 30%; }
+.page-hero-bleed.focal-research .hero-img { object-position: 50% 40%; }
+.page-hero-bleed.focal-ailab .hero-img { object-position: 40% 35%; }
+.page-hero-bleed.focal-di .hero-img { object-position: 55% 30%; }
+.page-hero-bleed.focal-about .hero-img { object-position: 50% 45%; }
+.page-hero-bleed.focal-support .hero-img { object-position: 50% 50%; }
+
+.page-hero-bleed .hero-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(11,46,36,0.2) 0%, rgba(11,46,36,0.55) 55%, rgba(11,46,36,0.85) 100%),
+    linear-gradient(90deg, rgba(11,46,36,0.55) 0%, transparent 60%);
+}
+.page-hero-bleed .hero-inner {
+  position: relative;
+  z-index: 2;
+  width: min(100% - 2 * var(--pad), var(--max));
+  margin-inline: auto;
+  padding: 3.5rem 0 3rem;
+  max-width: 40rem;
+}
+.page-hero-bleed .eyebrow { color: var(--gold-soft); }
+.page-hero-bleed .display { color: #fff; }
+.page-hero-bleed .lede { color: rgba(247,244,236,0.9); }
+
+.world-stack .world {
+  position: relative;
+  min-height: min(70vh, 36rem);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.world .world-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.world.focal-forest .world-img { object-position: 50% 40%; }
+.world.focal-knowledge .world-img { object-position: 40% 30%; }
+.world.focal-heritage .world-img { object-position: 50% 35%; }
+.world.focal-community .world-img { object-position: 45% 30%; }
+.world .world-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,46,36,0.15) 0%, rgba(11,46,36,0.7) 70%, rgba(11,46,36,0.88) 100%);
+}
+.world .world-inner {
+  position: relative;
+  z-index: 2;
+  width: min(100% - 2 * var(--pad), var(--max));
+  margin-inline: auto;
+  padding: 3rem 0 2.75rem;
+  max-width: 36rem;
+}
+.world .eyebrow { color: var(--gold-soft); }
+.world .display { color: #fff; }
+.world .lede { color: rgba(247,244,236,0.9); }
+
+.editorial-split {
+  display: grid;
+  gap: 0;
+  align-items: stretch;
+}
+@media (min-width: 900px) {
+  .editorial-split {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+  .editorial-split.reverse {
+    grid-template-columns: 0.85fr 1.15fr;
+  }
+  .editorial-split.reverse .editorial-text { order: -1; }
+}
+.editorial-image {
+  position: relative;
+  min-height: 22rem;
+  overflow: hidden;
+}
+.editorial-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  object-fit: cover;
+}
+.editorial-image.focal-valley img { object-position: 50% 40%; }
+.editorial-image.focal-water img { object-position: 40% 50%; }
+.editorial-image.focal-wildlife img { object-position: 60% 40%; }
+.editorial-image.focal-people img { object-position: 45% 30%; }
+.editorial-image.focal-architecture img { object-position: 50% 35%; }
+.editorial-image.focal-research img { object-position: 40% 35%; }
+.editorial-image.focal-learning img { object-position: 55% 30%; }
+
+.editorial-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 3.5rem) var(--pad);
+  background: var(--ivory);
+}
+.editorial-text.on-dark {
+  background: var(--forest);
+  color: var(--ivory);
+}
+.editorial-text.on-dark .display { color: #fff; }
+.editorial-text.on-dark .lede { color: rgba(247,244,236,0.88); }
