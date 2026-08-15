@@ -1,78 +1,27 @@
-# Bhavya Foundation — Website Asset Manifest
+# Website visual assets — Bhavya Foundation
 
-Status: Wave 31 complete
-Date: 2026-08-13
+## Source policy
+- Production heroes are **real high-resolution stock photography** (Unsplash), cropped 16:9, exported WebP.
+- Reference/design-board illustrations are **never** used as production full-bleed images.
+- No baked UI, no fake statistics overlays on images.
 
-## Policy
+## Mission mapping (brand board → photo)
+| Mission | Visual intent (from brand system) | Asset |
+|---------|-----------------------------------|--------|
+| Home | Misty layered Himalayan mountains, golden light | `heroes/home-hero.webp` |
+| Forest | Dense green canopy, river valley, mist | `missions/forest/hero.webp` + restoration/water/biodiversity/stewardship |
+| Knowledge | Library, study, learning atmosphere | `missions/knowledge/hero.webp` |
+| Heritage | Indian temple stone architecture | `missions/heritage/hero.webp` + architecture/archives/living-traditions |
+| Community | Outdoor education, people, volunteers | `missions/community/hero.webp` + education/youth/participation |
+| AI Lab | Technical learning / screens | `knowledge/ai-lab/hero.webp` |
+| Digital Institute | Collaborative learning | `knowledge/digital-institute/hero.webp` |
+| Research | Laboratory / evidence work | `knowledge/research/hero.webp` |
 
-- Reference/design-board images are **never** used as production website assets.
-- Photographic/illustrative assets below are **original** procedural compositions in the Bhavya palette.
-- Typography is never baked into images.
-- Real logo only under `brand/`; logo is not embedded in scene imagery.
+## Specs
+- Full heroes: 1920×1080 WebP, quality ~92
+- Cards: 960×540 WebP
+- Home srcset JPEGs: 640 / 960 / 1440 / 1920
 
-## Brand
-
-| Path | Purpose | Page | Type | Format | Source | Status |
-|------|---------|------|------|--------|--------|--------|
-| `assets/brand/logo.png` | Official Bhavya logo | global | brand mark | 256×256 | png | supplied real logo | ready |
-| `assets/heroes/home-hero.jpg` | Homepage hero background | / | original illustrative | 1600×900 | jpg | generated procedural | ready |
-| `assets/heroes/home-hero.webp` | Homepage hero background | / | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/forest/hero.webp` | Forest mission hero | /missions/forest | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/forest/restoration.webp` | Forest restoration visual | /missions/forest | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/forest/water.webp` | Water security visual | /missions/forest | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/forest/biodiversity.webp` | Biodiversity visual | /missions/forest | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/forest/stewardship.webp` | Community stewardship visual | /missions/forest | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/knowledge/hero.webp` | Knowledge mission hero | /missions/knowledge | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/heritage/hero.webp` | Heritage mission hero | /missions/heritage | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/heritage/architecture.webp` | Heritage architecture visual | /missions/heritage | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/heritage/archives.webp` | Heritage archives visual | /missions/heritage | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/heritage/living-traditions.webp` | Living traditions visual | /missions/heritage | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/community/hero.webp` | Community mission hero | /missions/community | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/community/education.webp` | Community education visual | /missions/community | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/community/youth.webp` | Community youth visual | /missions/community | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/missions/community/participation.webp` | Community participation visual | /missions/community | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/knowledge/ai-lab/hero.webp` | AI Lab hero | /knowledge/ai-lab | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/knowledge/digital-institute/hero.webp` | Digital Institute hero | /knowledge/digital-institute | original illustrative | 1600×900 | webp | generated procedural | ready |
-| `assets/knowledge/research/hero.webp` | Research hero | /knowledge/research | original illustrative | 1600×900 | webp | generated procedural | ready |
-
-## Decorative SVG
-
-- `assets/decorative/botanical-corner.svg` — decorative element
-- `assets/decorative/gold-divider.svg` — decorative element
-- `assets/decorative/leaf-line.svg` — decorative element
-- `assets/decorative/mountain-divider.svg` — decorative element
-- `assets/decorative/mountain-line.svg` — decorative element
-- `assets/decorative/sun.svg` — decorative element
-- `assets/decorative/wave-line.svg` — decorative element
-
-## Icons
-
-- `assets/icons/ai-lab.svg` — UI/mission icon
-- `assets/icons/biodiversity.svg` — UI/mission icon
-- `assets/icons/community.svg` — UI/mission icon
-- `assets/icons/education.svg` — UI/mission icon
-- `assets/icons/forest.svg` — UI/mission icon
-- `assets/icons/heritage.svg` — UI/mission icon
-- `assets/icons/knowledge.svg` — UI/mission icon
-- `assets/icons/library.svg` — UI/mission icon
-- `assets/icons/people.svg` — UI/mission icon
-- `assets/icons/research.svg` — UI/mission icon
-- `assets/icons/stewardship.svg` — UI/mission icon
-- `assets/icons/volunteer.svg` — UI/mission icon
-- `assets/icons/water.svg` — UI/mission icon
-
-## Card variants
-
-Each primary hero also has an 800×450 `-card` variant for mission grids.
-
-## Explicit exclusions
-
-- `knowledge.png` reference board — NOT used
-- Design-board / moodboard / UI collage screenshots — NOT used
-- Any ChatGPT reference mockup PNG — NOT used as production imagery
-
-## Wave 31 status
-
-- Website integration: **NOT PERFORMED**
-- Deployment: **NOT PERFORMED**
-- Next wave maps assets to page sections
+## Color system (from brand board)
+- Forest `#0B2E24` · Deep green `#1A5E2F` · Sage `#6A8F6E`
+- Earth `#8A603B` · Heritage gold `#D4AF37` · Warm ivory `#F7F4EC`
